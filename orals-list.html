@@ -1,0 +1,2422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-11-11 Sat 12:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Jonathan Reeve" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org56eda63">1. Oral Exam Reading List</a>
+<ul>
+<li><a href="#orgea2b54a">1.1. Progress</a></li>
+<li><a href="#org28a9f2a">1.2. Major Field: British Modernism</a></li>
+<li><a href="#org2bb0684">1.3. Minor Field: Victorian Literature</a></li>
+<li><a href="#orgcf9a43e">1.4. Minor Field: Computational Approaches to the Study of Literary Style</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org56eda63" class="outline-2">
+<h2 id="org56eda63"><span class="section-number-2">1</span> Oral Exam Reading List</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This oral exam reading list is centered around a major field of British literary
+modernism. Although literary modernism, as conceived here, is a protean and
+permeable designation, rather than a circumscribed category, the writers most
+represented in this list, such as Joyce, Woolf, and Yeats, are typical of a
+modernist survey course. The list expands outward from these writers, however,
+and includes those published alongside them in the influential "little
+magazines" of the 1910s and 20s, as well as a few non-British writers working in
+Britain or its colonies. A minor list of Victorian literature, which the moderns
+reacted to, and in many ways extended, provides a necessary background. This is
+not a list, however, which is completely distinct from the modernist list, as
+some writers, like Thomas Hardy, appear in both. Here, well-known novelists such
+as Dickens, Stevenson, and Eliot, appear alongside theorists like Arnold
+and Ruskin. Influential journals, such as the decadent '90s <i>The Yellow Book</i>,
+are also included. The secondary minor list is methodological, and contains recent
+books and articles concerning computational approaches to literary style. Since
+computational methods are an interdisciplinary by nature, some of these articles
+extend into the fields of statistics, corpus linguistics, and natural language
+processing. Although the list was curated to select a wide variety of
+methodological approaches, articles that treat the works of British modernists
+or Victorian writers are most represented here. These lists are linked in other
+ways, as well, such as through complementary pairs: Charlotte Brontë's <i>Jane
+Eyre</i> with Jean Rhys's reworking <i>The Wide Sargasso Sea</i>, for example. The
+subjects of quantitative analyses are similarly paired: Mahlberg's <i>Corpus
+Stylistics and Dickens's Fiction</i> deals primarily with <i>David Copperfield</i>;
+Ramsay's <i>Reading Machines and Balossi's "A Corpus Linguistic Approach to
+Literary Language and Characterization" analyze Woolf's /The Waves</i>; Zhao's "Art
+of Balance" discusses <i>To the Lighthouse</i>, and McKenna's "Statistical Analysis
+of Style" deals with <i>Ulysses</i>.
+</p>
+</div>
+
+<div id="outline-container-orgea2b54a" class="outline-3">
+<h3 id="orgea2b54a"><span class="section-number-3">1.1</span> Progress</h3>
+<div class="outline-text-3" id="text-1-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">List</th>
+<th scope="col" class="org-right">Total Works</th>
+<th scope="col" class="org-right">Total Pages</th>
+<th scope="col" class="org-right">Remaining Pages</th>
+<th scope="col" class="org-right">% Complete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Modernist</td>
+<td class="org-right">60</td>
+<td class="org-right">15672</td>
+<td class="org-right">7531.5</td>
+<td class="org-right">38.308424</td>
+</tr>
+
+<tr>
+<td class="org-left">Victorian</td>
+<td class="org-right">29</td>
+<td class="org-right">11605</td>
+<td class="org-right">6224.3</td>
+<td class="org-right">43.068691</td>
+</tr>
+
+<tr>
+<td class="org-left">Style</td>
+<td class="org-right">49</td>
+<td class="org-right">2922</td>
+<td class="org-right">2749.5</td>
+<td class="org-right">4.9794661</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total</td>
+<td class="org-right">138</td>
+<td class="org-right">30199</td>
+<td class="org-right">16505.3</td>
+<td class="org-right">45.344879</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Days to exam</td>
+<td class="org-right">160</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Pages per day</td>
+<td class="org-right">103.15813</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org28a9f2a" class="outline-3">
+<h3 id="org28a9f2a"><span class="section-number-3">1.2</span> Major Field: British Modernism</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Although the boundaries of literary modernism extend with every new monograph on
+the subject, and although it is often pluralized to "modernisms," better
+reflecting the international nature of the cultural phenomenon, this list is
+primarily modeled after the readings of a survey course in British modernism,
+and contains mostly canonical writers typically associated with the period,
+either British, or writing from Britain or its colonies. This departs from the
+typical survey course, however, in its inclusion of the 1910s and 20s journals
+and little magazines in which many of these works were originally published:
+Anderson's <i>The Little Review</i>, Lewis's <i>Blast</i>, Ford's <i>The English Review</i>,
+and Pound's editorship of <i>The Dial</i>. These are selected not to provide
+alternative editions of the canonical works included here, but to provide
+contexts for the publishing environment of early modernism. Chronologically,
+this list chiefly includes the generation alive and working in the 10s and 20s,
+so although the temporal boundary of modernism is often drawn in the 1930s, I am
+extending it to include, in some cases, the writers' later works: Woolf's 1941
+<i>Between the Acts</i>, Pound's middle Cantos, and Jean Rhys's 1966 <i>The Wide
+Sargasso Sea</i>. There are also works of nonfiction that were either explicitly
+influential to these writers, or in some other way informed the zeitgeist:
+Frazer's <i>Golden Bough</i>, Freud's <i>Interpretation of Dreams</i>, and Pound's <i>ABC of
+Reading</i>, for instance. A secondary list, below the divider, contains seminal
+works of criticism that discuss these writers, their era, their literary
+movement, or the publishing environment in which they worked.
+</p>
+
+<table id="org4c192bd" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Author</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-right">Year</th>
+<th scope="col" class="org-right">Read</th>
+<th scope="col" class="org-left">Genre</th>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Availability</th>
+<th scope="col" class="org-right">Pages</th>
+<th scope="col" class="org-right">Remaining</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review (selected issues)</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1914">anderson_little_1914</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review 1-1</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1914-1">anderson_little_1914-1</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">68</td>
+<td class="org-right">68</td>
+</tr>
+
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review 1-2 Emma Goldman Controversy</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1914-2">anderson_little_1914-2</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">68</td>
+<td class="org-right">68</td>
+</tr>
+
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review 3-6 "Blank Issue"</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1916">anderson_little_1916</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">32</td>
+<td class="org-right">32</td>
+</tr>
+
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review 11-4 Ulysses I</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1918">anderson_little_1918</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">68</td>
+<td class="org-right">68</td>
+</tr>
+
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review 11-6 Nausicaa</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1920">anderson_little_1920</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">74</td>
+<td class="org-right">74</td>
+</tr>
+
+<tr>
+<td class="org-left">Anderson, Margeret, ed.</td>
+<td class="org-left">The Little Review 1-2 (article on Ulysses trial)</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#anderson_little_1921">anderson_little_1921</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">68</td>
+<td class="org-right">68</td>
+</tr>
+
+<tr>
+<td class="org-left">Auden, W.H.</td>
+<td class="org-left">Selected Poems</td>
+<td class="org-right">2009</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#auden_selected_1979">auden_selected_1979</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">350</td>
+<td class="org-right">175.</td>
+</tr>
+
+<tr>
+<td class="org-left">Barnes, Djuna</td>
+<td class="org-left">Nightwood</td>
+<td class="org-right">1936</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#barnes_nightwood_2006">barnes_nightwood_2006</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">214</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Beerbohm, Max</td>
+<td class="org-left">Seven Men</td>
+<td class="org-right">1919</td>
+<td class="org-right">0</td>
+<td class="org-left">Short stories</td>
+<td class="org-left"><a class='org-ref-reference' href="#beerbohm_seven_1920">beerbohm_seven_1920</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">238</td>
+<td class="org-right">238</td>
+</tr>
+
+<tr>
+<td class="org-left">Brooke, Rupert</td>
+<td class="org-left">Poems anthologized in <i>The Penguin Book of First World War Poetry</i></td>
+<td class="org-right">1910s-20s</td>
+<td class="org-right">0</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#walter_poems_2006-2">walter_poems_2006-2</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">92</td>
+<td class="org-right">92</td>
+</tr>
+
+<tr>
+<td class="org-left">Conrad, Joseph</td>
+<td class="org-left">Heart of Darkness</td>
+<td class="org-right">1902</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#conrad_heart_1999">conrad_heart_1999</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">270</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Conrad, Joseph</td>
+<td class="org-left">The Secret Agent</td>
+<td class="org-right">1907</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#conrad_secret_2009">conrad_secret_2009</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">255</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliot, T.S.</td>
+<td class="org-left">The Love Song of J. Alfred Prufrock</td>
+<td class="org-right">1917</td>
+<td class="org-right">1</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#eliot_collected_1963">eliot_collected_1963</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">5</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliot, T.S.</td>
+<td class="org-left">The Waste Land</td>
+<td class="org-right">1922</td>
+<td class="org-right">1</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#eliot_waste_2001">eliot_waste_2001</a></td>
+<td class="org-left">Paper, Norton</td>
+<td class="org-right">50</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliot, T.S.</td>
+<td class="org-left">Four Quartets</td>
+<td class="org-right">1944</td>
+<td class="org-right">1</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#eliot_collected_1963">eliot_collected_1963</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Ford, Ford Madox, ed.</td>
+<td class="org-left">The English Review (selected issues)</td>
+<td class="org-right">1908-12</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left">see issues</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Ford, Ford Madox, Ed.</td>
+<td class="org-left">The English Review 1-1</td>
+<td class="org-right">1907</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#hueffer_english_1908">hueffer_english_1908</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">212</td>
+<td class="org-right">212</td>
+</tr>
+
+<tr>
+<td class="org-left">Ford, Ford Madox, Ed.</td>
+<td class="org-left">The English Review 3-12</td>
+<td class="org-right">1908</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#hueffer_english_1909">hueffer_english_1909</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">208</td>
+<td class="org-right">208</td>
+</tr>
+
+<tr>
+<td class="org-left">Ford, Ford Madox, ed.</td>
+<td class="org-left">The Good Soldier</td>
+<td class="org-right">1915</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#ford_good_2003">ford_good_2003</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">368</td>
+<td class="org-right">368</td>
+</tr>
+
+<tr>
+<td class="org-left">Forster, E.M.</td>
+<td class="org-left">A Room with a View</td>
+<td class="org-right">1908</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#forster_room_2012">forster_room_2012</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">176</td>
+<td class="org-right">176</td>
+</tr>
+
+<tr>
+<td class="org-left">Forster, E.M.</td>
+<td class="org-left">A Passage to India</td>
+<td class="org-right">1924</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#forster_passage_1984">forster_passage_1984</a></td>
+<td class="org-left">Paper</td>
+<td class="org-right">362</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Frazer, James</td>
+<td class="org-left">The Golden Bough</td>
+<td class="org-right">1890</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Nonfiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#frazer_golden_1996">frazer_golden_1996</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">516</td>
+<td class="org-right">258.</td>
+</tr>
+
+<tr>
+<td class="org-left">Freud, Sigmund</td>
+<td class="org-left">The Interpretation of Dreams</td>
+<td class="org-right">1900</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Nonfiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#freud_interpretation_2010">freud_interpretation_2010</a></td>
+<td class="org-left">Paper ordered</td>
+<td class="org-right">557</td>
+<td class="org-right">278.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Freud, Sigmund</td>
+<td class="org-left">Civilization and its Discontents</td>
+<td class="org-right">1930</td>
+<td class="org-right">0</td>
+<td class="org-left">Nonfiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#freud_civilization_2015">freud_civilization_2015</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">111</td>
+<td class="org-right">111</td>
+</tr>
+
+<tr>
+<td class="org-left">Hardy, Thomas</td>
+<td class="org-left">Jude the Obscure</td>
+<td class="org-right">1896</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#hardy_jude_2015">hardy_jude_2015</a></td>
+<td class="org-left">Paper, Norton</td>
+<td class="org-right">451</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Joyce, James</td>
+<td class="org-left">A Portrait of the Artist as a Young Man</td>
+<td class="org-right">1914</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#joyce_portrait_2007">joyce_portrait_2007</a></td>
+<td class="org-left">Paper, EPUB on GBP</td>
+<td class="org-right">490</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Joyce, James</td>
+<td class="org-left">Dubliners</td>
+<td class="org-right">1914</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#joyce_dubliners:_2006">joyce_dubliners:_2006</a></td>
+<td class="org-left">EPUB on GBP</td>
+<td class="org-right">369</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Joyce, James</td>
+<td class="org-left">Ulysses</td>
+<td class="org-right">1922</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#joyce_ulysses_1986">joyce_ulysses_1986</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">668</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Kipling, Rudyard</td>
+<td class="org-left">Kim</td>
+<td class="org-right">1901</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#kipling_kim:_2002">kipling_kim:_2002</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">480</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Lawrence, D.H.</td>
+<td class="org-left">Sons and Lovers</td>
+<td class="org-right">1913</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#lawrence_sons_1913">lawrence_sons_1913</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">537</td>
+<td class="org-right">268.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Lawrence, D.H.</td>
+<td class="org-left">Lady Chatterley's Lover</td>
+<td class="org-right">1928</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#lawrence_lady_2006">lawrence_lady_2006</a></td>
+<td class="org-left">Paper - Penguin Deluxe</td>
+<td class="org-right">400</td>
+<td class="org-right">400</td>
+</tr>
+
+<tr>
+<td class="org-left">Lewis, Wyndham</td>
+<td class="org-left">Tarr</td>
+<td class="org-right">1918</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#lewis_tarr_1918">lewis_tarr_1918</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">393</td>
+<td class="org-right">393</td>
+</tr>
+
+<tr>
+<td class="org-left">Lewis, Wyndham, ed.</td>
+<td class="org-left">Blast (selected issues)</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left">see issues</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Lewis, Wyndham, Ed.</td>
+<td class="org-left">The Blast 1</td>
+<td class="org-right">1914</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#lewis_blast_1914">lewis_blast_1914</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">212</td>
+<td class="org-right">212</td>
+</tr>
+
+<tr>
+<td class="org-left">Lewis, Wyndham, Ed.</td>
+<td class="org-left">The Blast 2</td>
+<td class="org-right">1915</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#lewis_blast_1915">lewis_blast_1915</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">112</td>
+<td class="org-right">112</td>
+</tr>
+
+<tr>
+<td class="org-left">Loy, Mina</td>
+<td class="org-left">The Lunar Baedeker</td>
+<td class="org-right">1923</td>
+<td class="org-right">0</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#loy_lost_2015">loy_lost_2015</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">256</td>
+<td class="org-right">256</td>
+</tr>
+
+<tr>
+<td class="org-left">Mansfield, Katherine</td>
+<td class="org-left">The Garden Party and Other Stories</td>
+<td class="org-right">1922</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Short stories</td>
+<td class="org-left"><a class='org-ref-reference' href="#mansfield_katherine_2006">mansfield_katherine_2006</a></td>
+<td class="org-left">Paper, Norton</td>
+<td class="org-right">430</td>
+<td class="org-right">215.</td>
+</tr>
+
+<tr>
+<td class="org-left">Orage, A. R.</td>
+<td class="org-left">The New Age (selected issues)</td>
+<td class="org-right">1920s</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Orwell, Geroge</td>
+<td class="org-left">Burmese Days</td>
+<td class="org-right">1934</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#orwell_burmese_1986">orwell_burmese_1986</a></td>
+<td class="org-left">EPUB on GPB</td>
+<td class="org-right">277</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Owen, Wilfred</td>
+<td class="org-left">Poems anthologized in <i>The Penguin Book of First World War Poetry</i></td>
+<td class="org-right">1910s-20s</td>
+<td class="org-right">0</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#walter_poems_2006">walter_poems_2006</a></td>
+<td class="org-left">EPUB on GBP</td>
+<td class="org-right">92</td>
+<td class="org-right">92</td>
+</tr>
+
+<tr>
+<td class="org-left">Pound, Ezra</td>
+<td class="org-left">ABC of Reading</td>
+<td class="org-right">1934</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Nonfiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#pound_abc_1960">pound_abc_1960</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">206</td>
+<td class="org-right">103.</td>
+</tr>
+
+<tr>
+<td class="org-left">Pound, Ezra</td>
+<td class="org-left">The Cantos</td>
+<td class="org-right">1948</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#pound_cantos_1996">pound_cantos_1996</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">824</td>
+<td class="org-right">412.</td>
+</tr>
+
+<tr>
+<td class="org-left">Pound, Ezra, ed.</td>
+<td class="org-left">The Dial (selected issues)</td>
+<td class="org-right">1920-22</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left">see issues</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Rhys, Jean</td>
+<td class="org-left">The Left Bank and Other Stories</td>
+<td class="org-right">1927</td>
+<td class="org-right">0</td>
+<td class="org-left">Short Stories</td>
+<td class="org-left"><a class='org-ref-reference' href="#rhys_collected_1992">rhys_collected_1992</a></td>
+<td class="org-left">Paper</td>
+<td class="org-right">406</td>
+<td class="org-right">406</td>
+</tr>
+
+<tr>
+<td class="org-left">Rhys, Jean</td>
+<td class="org-left">Wide Sargasso Sea</td>
+<td class="org-right">1966</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#rhys_wide_1999">rhys_wide_1999</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">270</td>
+<td class="org-right">270</td>
+</tr>
+
+<tr>
+<td class="org-left">Richardson, Dorothy</td>
+<td class="org-left">Pointed Roofs</td>
+<td class="org-right">1915</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#richardson_pointed_1919">richardson_pointed_1919</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">285</td>
+<td class="org-right">285</td>
+</tr>
+
+<tr>
+<td class="org-left">Richardson, Dorothy</td>
+<td class="org-left">The Tunnel</td>
+<td class="org-right">1919</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#richardson_tunnel_1919">richardson_tunnel_1919</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">332</td>
+<td class="org-right">332</td>
+</tr>
+
+<tr>
+<td class="org-left">Sassoon, Siegfried</td>
+<td class="org-left">Poems anthologized in <i>The Penguin Book of First World War Poetry</i></td>
+<td class="org-right">1910s-20s</td>
+<td class="org-right">0</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#walter_poems_2006-1">walter_poems_2006-1</a></td>
+<td class="org-left">EPUB on GBP</td>
+<td class="org-right">92</td>
+<td class="org-right">92</td>
+</tr>
+
+<tr>
+<td class="org-left">Shaw, George Bernard</td>
+<td class="org-left">Pygmalion</td>
+<td class="org-right">1913</td>
+<td class="org-right">0</td>
+<td class="org-left">Play</td>
+<td class="org-left"><a class='org-ref-reference' href="#shaw_george_2002">shaw_george_2002</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">200</td>
+<td class="org-right">200</td>
+</tr>
+
+<tr>
+<td class="org-left">Synge, J.M.</td>
+<td class="org-left">Playboy of the Western World</td>
+<td class="org-right">1907</td>
+<td class="org-right">1</td>
+<td class="org-left">Play</td>
+<td class="org-left"><a class='org-ref-reference' href="#synge_playboy_1911">synge_playboy_1911</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">124</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Wells, H.G.</td>
+<td class="org-left">Anne Veronica</td>
+<td class="org-right">1909</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#wells_ann_2015">wells_ann_2015</a></td>
+<td class="org-left">Epub - GPB</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Wells, H.G.</td>
+<td class="org-left">Tono-Bungay</td>
+<td class="org-right">1909</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#wells_tono-bungay_2011">wells_tono-bungay_2011</a></td>
+<td class="org-left">Epub - Kindle</td>
+<td class="org-right">384</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Wells, H.G.</td>
+<td class="org-left">The Outline of History</td>
+<td class="org-right">1919</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Nonfiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#wells_outline_1921">wells_outline_1921</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">1197</td>
+<td class="org-right">598.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Woolf, Virginia</td>
+<td class="org-left">Mrs. Dalloway</td>
+<td class="org-right">1915</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#woolf_mrs_2016">woolf_mrs_2016</a></td>
+<td class="org-left">Epub - GBP</td>
+<td class="org-right">190</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Woolf, Virginia</td>
+<td class="org-left">To the Lighthouse</td>
+<td class="org-right">1927</td>
+<td class="org-right">1</td>
+<td class="org-left">Nonfiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#woolf_lighthouse_1993">woolf_lighthouse_1993</a></td>
+<td class="org-left">Epub - GPB</td>
+<td class="org-right">267</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Woolf, Virginia</td>
+<td class="org-left">The Waves</td>
+<td class="org-right">1931</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#woolf_waves_2014">woolf_waves_2014</a></td>
+<td class="org-left">Epub - GPB</td>
+<td class="org-right">300</td>
+<td class="org-right">150.</td>
+</tr>
+
+<tr>
+<td class="org-left">Woolf, Virginia</td>
+<td class="org-left">Between the Acts</td>
+<td class="org-right">1941</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#woolf_between_2008">woolf_between_2008</a></td>
+<td class="org-left">Epub - Kindle</td>
+<td class="org-right">288</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">West, Rebecca</td>
+<td class="org-left">Return of the Soldier</td>
+<td class="org-right">1918</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#west_return_2010">west_return_2010</a></td>
+<td class="org-left">Epub - GBP</td>
+<td class="org-right">240</td>
+<td class="org-right">240</td>
+</tr>
+
+<tr>
+<td class="org-left">Yeats, W.B.</td>
+<td class="org-left">Selected Poems</td>
+<td class="org-right">1910s-20s</td>
+<td class="org-right">1</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#yeats_yeatss_2000">yeats_yeatss_2000</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">518</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Kenner, Hugh</td>
+<td class="org-left">Pound Era, The</td>
+<td class="org-right">1971</td>
+<td class="org-right">0.6</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#kenner_pound_1971">kenner_pound_1971</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">606</td>
+<td class="org-right">303.</td>
+</tr>
+
+<tr>
+<td class="org-left">Ardis, Ann</td>
+<td class="org-left">Modernism and Cultural Conflict</td>
+<td class="org-right">2002</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#ardis_modernism_2002">ardis_modernism_2002</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">199</td>
+<td class="org-right">199</td>
+</tr>
+
+<tr>
+<td class="org-left">Williams, Raymond</td>
+<td class="org-left">Politics of Modernism</td>
+<td class="org-right">1996</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#williams_politics_1996">williams_politics_1996</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">208</td>
+<td class="org-right">208</td>
+</tr>
+
+<tr>
+<td class="org-left">Meisel, Perry</td>
+<td class="org-left">Myth of the Modern, The</td>
+<td class="org-right">1989</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#meisel_myth_1987">meisel_myth_1987</a></td>
+<td class="org-left">Butler</td>
+<td class="org-right">263</td>
+<td class="org-right">263</td>
+</tr>
+
+<tr>
+<td class="org-left">Leveanson, Michael</td>
+<td class="org-left">Genealogy of Modernism</td>
+<td class="org-right">1986</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#levenson_genealogy_1986">levenson_genealogy_1986</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">272</td>
+<td class="org-right">272</td>
+</tr>
+
+<tr>
+<td class="org-left">Calinescu, Matei</td>
+<td class="org-left">Five Faces of Modernity</td>
+<td class="org-right">1987</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#calinescu_five_1987">calinescu_five_1987</a></td>
+<td class="org-left">Butler</td>
+<td class="org-right">395</td>
+<td class="org-right">395</td>
+</tr>
+
+<tr>
+<td class="org-left">Moretti, Franco</td>
+<td class="org-left">Signs Taken for Wonders</td>
+<td class="org-right">1983</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#moretti_signs_1988">moretti_signs_1988</a></td>
+<td class="org-left">Butler</td>
+<td class="org-right">324</td>
+<td class="org-right">324</td>
+</tr>
+
+<tr>
+<td class="org-left">Bulson, Eric</td>
+<td class="org-left">Little Magazine, World Form</td>
+<td class="org-right">2016</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#bulson_little_2016">bulson_little_2016</a></td>
+<td class="org-left">Butler Offsite, GB</td>
+<td class="org-right">352</td>
+<td class="org-right">352</td>
+</tr>
+
+<tr>
+<td class="org-left">Morrison, Mark</td>
+<td class="org-left">The Public Face of Modernism</td>
+<td class="org-right">2001</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#morrisson_public_2001">morrisson_public_2001</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Scholes, Robert</td>
+<td class="org-left">Modernism in the Magazines</td>
+<td class="org-right">2010</td>
+<td class="org-right">0</td>
+<td class="org-left">Criticism</td>
+<td class="org-left"><a class='org-ref-reference' href="#scholes_modernism_2010">scholes_modernism_2010</a></td>
+<td class="org-left">Avail. through Borrow Direct</td>
+<td class="org-right">340</td>
+<td class="org-right">340</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">60</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">15672</td>
+<td class="org-right">7531.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2bb0684" class="outline-3">
+<h3 id="org2bb0684"><span class="section-number-3">1.3</span> Minor Field: Victorian Literature</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+As period adjacent to British modernism, the Victorian period forms an important
+background to it. This minor list represents works selected from those commonly
+taught in a survey course of Victorian literature. It consists primarily of
+novels, with selected poems by Tennyson, Hopkins, and Rosetti. There are also
+two plays: George Bernard Shaw's "Mrs Warren's Profession," and Oscar Wilde's
+"The Importance of Being Earnest." Works known for their realism (<i>Middlemarch</i>)
+or naturalism (<i>Tess of the d'Ubervilles</i>) are paired with works that deal with
+the supernatural (<i>The Moonstone</i>, <i>Dracula</i>). Also included are two non-fiction
+works from Victorian critics and essayists: Arnold's <i>Culture and Anarchy</i> and
+Ruskin's <i>Selected Writings</i>. Two journals are included: the decadent 1890s <i>The
+Yellow Book</i>, and the more populist <i>The Graphic</i>, especially for their
+influence on literary modernism.
+</p>
+
+<table id="orgb6ad2a3" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Author</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-right">Year</th>
+<th scope="col" class="org-right">Read</th>
+<th scope="col" class="org-left">Genre</th>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Availability</th>
+<th scope="col" class="org-right">Pages</th>
+<th scope="col" class="org-right">Remaining</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Arnold, Matthew</td>
+<td class="org-left">Culture and Anarchy</td>
+<td class="org-right">1867</td>
+<td class="org-right">0</td>
+<td class="org-left">Non-fiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#arnold_culture_1869">arnold_culture_1869</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">344</td>
+<td class="org-right">344</td>
+</tr>
+
+<tr>
+<td class="org-left">Brontë, Charlotte</td>
+<td class="org-left">Jane Eyre</td>
+<td class="org-right">1847</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#bronte_jane_2016">bronte_jane_2016</a></td>
+<td class="org-left">PDF and paper, Norton</td>
+<td class="org-right">385</td>
+<td class="org-right">385</td>
+</tr>
+
+<tr>
+<td class="org-left">Brontë, Emily</td>
+<td class="org-left">Wuthering Heights</td>
+<td class="org-right">1845</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#bronte_wuthering_2007">bronte_wuthering_2007</a></td>
+<td class="org-left">EPUB - GPB</td>
+<td class="org-right">404</td>
+<td class="org-right">404</td>
+</tr>
+
+<tr>
+<td class="org-left">Carlyle, Thomas</td>
+<td class="org-left">Sartor Resartus</td>
+<td class="org-right">1836</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#carlyle_sartor_1872">carlyle_sartor_1872</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">248</td>
+<td class="org-right">248</td>
+</tr>
+
+<tr>
+<td class="org-left">Collins, Wilkie</td>
+<td class="org-left">Moonstone, The</td>
+<td class="org-right">1868</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#collins_moonstone_1999">collins_moonstone_1999</a></td>
+<td class="org-left">EPUB - GPB</td>
+<td class="org-right">637</td>
+<td class="org-right">318.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Dickens, Charles</td>
+<td class="org-left">Bleak House</td>
+<td class="org-right">1852</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#dickens_bleak_1977">dickens_bleak_1977</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">760</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Dickens, Charles</td>
+<td class="org-left">David Copperfield</td>
+<td class="org-right">1850</td>
+<td class="org-right">0.5</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#dickens_david_1990">dickens_david_1990</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">854</td>
+<td class="org-right">427.</td>
+</tr>
+
+<tr>
+<td class="org-left">Doyle, Arthur Conan</td>
+<td class="org-left">The Adventures of Sherlock Holmes</td>
+<td class="org-right">1902</td>
+<td class="org-right">1</td>
+<td class="org-left">Short stories</td>
+<td class="org-left"><a class='org-ref-reference' href="#doyle_new_2007">doyle_new_2007</a></td>
+<td class="org-left">EPUB - Amazon</td>
+<td class="org-right">300</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliot, George</td>
+<td class="org-left">Middlemarch</td>
+<td class="org-right">1871</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#maertz_middlemarch_2004">maertz_middlemarch_2004</a></td>
+<td class="org-left">EPUB - GPB</td>
+<td class="org-right">750</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Eliot, George</td>
+<td class="org-left">Daniel Deronda</td>
+<td class="org-right">1876</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#eliot_daniel_2009">eliot_daniel_2009</a></td>
+<td class="org-left">EPUB - GPB</td>
+<td class="org-right">724</td>
+<td class="org-right">724</td>
+</tr>
+
+<tr>
+<td class="org-left">Gaskell, Elizabeth</td>
+<td class="org-left">North and South</td>
+<td class="org-right">1855</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#gaskell_north_2005">gaskell_north_2005</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">585</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Hardy, Thomas</td>
+<td class="org-left">Tess of the d'Ubervilles</td>
+<td class="org-right">1891</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#hardy_tess_2007">hardy_tess_2007</a></td>
+<td class="org-left">Paper - Broadview</td>
+<td class="org-right">400</td>
+<td class="org-right">400</td>
+</tr>
+
+<tr>
+<td class="org-left">Hopkins, Gerard Manley</td>
+<td class="org-left">Selected Poems</td>
+<td class="org-right">1860-80</td>
+<td class="org-right">0.1</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#hopkins_selected_2013">hopkins_selected_2013</a></td>
+<td class="org-left">EPUB - GBP</td>
+<td class="org-right">124</td>
+<td class="org-right">111.6</td>
+</tr>
+
+<tr>
+<td class="org-left">James, Henry</td>
+<td class="org-left">Turn of the Screw, The</td>
+<td class="org-right">1898</td>
+<td class="org-right">1</td>
+<td class="org-left">Novella</td>
+<td class="org-left"><a class='org-ref-reference' href="#james_turn_2010">james_turn_2010</a></td>
+<td class="org-left">EPUB - GBP</td>
+<td class="org-right">304</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Rosetti, Christina</td>
+<td class="org-left">Goblin Market and Other Poems</td>
+<td class="org-right">1859</td>
+<td class="org-right">0.1</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#rossetti_goblin_1865">rossetti_goblin_1865</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">212</td>
+<td class="org-right">190.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Ruskin, John</td>
+<td class="org-left">Selected Writings</td>
+<td class="org-right">1860s</td>
+<td class="org-right">0.7</td>
+<td class="org-left">Non-fiction</td>
+<td class="org-left"><a class='org-ref-reference' href="#ruskin_selected_2009">ruskin_selected_2009</a></td>
+<td class="org-left">Paper</td>
+<td class="org-right">368</td>
+<td class="org-right">110.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Shaw, George Bernard</td>
+<td class="org-left">Mrs Warren's Profession</td>
+<td class="org-right">1893</td>
+<td class="org-right">1</td>
+<td class="org-left">Drama</td>
+<td class="org-left"><a class='org-ref-reference' href="#shaw_george_2002">shaw_george_2002</a></td>
+<td class="org-left">Paper ordered</td>
+<td class="org-right">200</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Stevenson, Robert Louis</td>
+<td class="org-left">The Strange Case of Dr. Jekyll and Mr. Hyde</td>
+<td class="org-right">1886</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#stevenson_strange_2005">stevenson_strange_2005</a></td>
+<td class="org-left">EPUB - GBP</td>
+<td class="org-right">220</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Stoker, Bram</td>
+<td class="org-left">Dracula</td>
+<td class="org-right">1897</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#stoker_dracula_1997">stoker_dracula_1997</a></td>
+<td class="org-left">EPUB - GBP</td>
+<td class="org-right">493</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Thackeray, William Makepeace</td>
+<td class="org-left">Vanity Fair</td>
+<td class="org-right">1847</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#thackeray_vanity_1994">thackeray_vanity_1994</a></td>
+<td class="org-left">Paper - Norton</td>
+<td class="org-right">689</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Trollope, Anthony</td>
+<td class="org-left">Barchester Towers</td>
+<td class="org-right">1857</td>
+<td class="org-right">0</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#trollope_barchester_1904">trollope_barchester_1904</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">372</td>
+<td class="org-right">372</td>
+</tr>
+
+<tr>
+<td class="org-left">Tennyson, Lord Alfred</td>
+<td class="org-left">Selected Poems</td>
+<td class="org-right">1830-90</td>
+<td class="org-right">0</td>
+<td class="org-left">Poetry</td>
+<td class="org-left"><a class='org-ref-reference' href="#ricks_tennyson:_2014">ricks_tennyson:_2014</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">1072</td>
+<td class="org-right">1072</td>
+</tr>
+
+<tr>
+<td class="org-left">Wilde, Oscar</td>
+<td class="org-left">Picture of Dorian Gray</td>
+<td class="org-right">1890</td>
+<td class="org-right">0</td>
+<td class="org-left">Novella</td>
+<td class="org-left"><a class='org-ref-reference' href="#wilde_picture_2010">wilde_picture_2010</a></td>
+<td class="org-left">EPUB - GBP</td>
+<td class="org-right">268</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Wilde, Oscar</td>
+<td class="org-left">The Importance of Being Earnest</td>
+<td class="org-right">1895</td>
+<td class="org-right">1</td>
+<td class="org-left">Drama</td>
+<td class="org-left"><a class='org-ref-reference' href="#wilde_importance_2009">wilde_importance_2009</a></td>
+<td class="org-left">Paper - Broadview</td>
+<td class="org-right">144</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">du Maurier, George</td>
+<td class="org-left">Trilby</td>
+<td class="org-right">1894</td>
+<td class="org-right">1</td>
+<td class="org-left">Novel</td>
+<td class="org-left"><a class='org-ref-reference' href="#maurier_trilby_2003">maurier_trilby_2003</a></td>
+<td class="org-left">Paper - Broadview</td>
+<td class="org-right">447</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Various</td>
+<td class="org-left">The Yellow Book (selected issues)</td>
+<td class="org-right">1890s</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#denisoff_yellow_2017">denisoff_yellow_2017</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Various</td>
+<td class="org-left">The Yellow Book 1</td>
+<td class="org-right">1890s</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left"><a class='org-ref-reference' href="#beardsley_yellow_1894">beardsley_yellow_1894</a></td>
+<td class="org-left">PDF</td>
+<td class="org-right">301</td>
+<td class="org-right">301</td>
+</tr>
+
+<tr>
+<td class="org-left">Various</td>
+<td class="org-left">The Graphic (selected issues)</td>
+<td class="org-right">1890s</td>
+<td class="org-right">0</td>
+<td class="org-left">Journal</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Wells, H.G.</td>
+<td class="org-left">The Time Machine</td>
+<td class="org-right">1897</td>
+<td class="org-right">1</td>
+<td class="org-left">Novella</td>
+<td class="org-left"><a class='org-ref-reference' href="#wells_time_2001">wells_time_2001</a></td>
+<td class="org-left">EPUB - Kindle</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">29</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">13.9</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">11605</td>
+<td class="org-right">5408.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgcf9a43e" class="outline-3">
+<h3 id="orgcf9a43e"><span class="section-number-3">1.4</span> Minor Field: Computational Approaches to the Study of Literary Style</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+This minor reading list collects computational approaches to the study of
+literary style, an interdisciplinary methodological category that spans the
+fields of the digital humanities, stylistics, and corpus linguistics. As style
+is a variously interpreted, broad category, this list is subdivided into studies
+of genre, character style (characterization), gendered style, the style of
+"literariness," and style in translation. A few early quantitative analyses are
+included here, in order to provide background; approaches to the study of
+individual writers' styles, including statistical stylistics (stylometry) are
+also included, extending into the sub-field of authorship attribution. Finally,
+important objections to computational methods, and to stylistics more generally,
+are included, as they are frequently referenced in these studies.
+</p>
+
+<table id="orga8e59e0" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Author</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-right">Year</th>
+<th scope="col" class="org-right">Read</th>
+<th scope="col" class="org-left">Subject</th>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Availability</th>
+<th scope="col" class="org-right">Pages</th>
+<th scope="col" class="org-right">Remaining</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Mendenhall, T.C.</td>
+<td class="org-left">The Characteristic Curves of Composition</td>
+<td class="org-right">1887</td>
+<td class="org-right">1</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#mendenhall_characteristic_1887">mendenhall_characteristic_1887</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">12</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">Mendenhall, T.C.</td>
+<td class="org-left">A Mechanical Solution of a Literary Problem</td>
+<td class="org-right">1901</td>
+<td class="org-right">1</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#mendenhall_mechanical_1901">mendenhall_mechanical_1901</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">4</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Zipf, G.K.</td>
+<td class="org-left">Selected Studies in the Principle of Relative Frequency in Language</td>
+<td class="org-right">1932</td>
+<td class="org-right">0</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#zipf_selected_1932">zipf_selected_1932</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Yule, G. Udny</td>
+<td class="org-left">On Sentence-Length as a Statistical Characteristic of Style in Prose</td>
+<td class="org-right">1939</td>
+<td class="org-right">1</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#yule_sentence-length_1939">yule_sentence-length_1939</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">27</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Yule, G. Udny</td>
+<td class="org-left">The Statistical Study of Literary Vocabulary</td>
+<td class="org-right">1944</td>
+<td class="org-right">0</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#yule_statistical_1944">yule_statistical_1944</a></td>
+<td class="org-left">book</td>
+<td class="org-left">offsite - requested</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Fucks, W.</td>
+<td class="org-left">On Mathematical Analysis of Style</td>
+<td class="org-right">1952</td>
+<td class="org-right">1</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#fucks_mathematical_1952">fucks_mathematical_1952</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">7</td>
+<td class="org-right">7</td>
+</tr>
+
+<tr>
+<td class="org-left">Luhn, H.P.</td>
+<td class="org-left">A Statistical Approach to Mechanized Encoding and Searching of Literary Information</td>
+<td class="org-right">1957</td>
+<td class="org-right">0</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#luhn_statistical_1957">luhn_statistical_1957</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">12</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">Mosteller, F. and Wallace, D.</td>
+<td class="org-left">Inference and Disputed Authorship: the Federalist Papers</td>
+<td class="org-right">1964</td>
+<td class="org-right">0</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#mosteller_inference_2007">mosteller_inference_2007</a></td>
+<td class="org-left">book</td>
+<td class="org-left">mathematics library</td>
+<td class="org-right">362</td>
+<td class="org-right">362</td>
+</tr>
+
+<tr>
+<td class="org-left">Burton, Dolores</td>
+<td class="org-left">Shakespeare's grammatical style; a computer-assisted analysis of Richard II and Anthony and Cleopatra</td>
+<td class="org-right">1973</td>
+<td class="org-right">0</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#burton_shakespeares_1973">burton_shakespeares_1973</a></td>
+<td class="org-left">book</td>
+<td class="org-left">at Butler</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Holmes, D.I.</td>
+<td class="org-left">The Analysis of Literary Style</td>
+<td class="org-right">1985</td>
+<td class="org-right">0</td>
+<td class="org-left">history</td>
+<td class="org-left"><a class='org-ref-reference' href="#holmes_analysis_1985">holmes_analysis_1985</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">12</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">Burrows, John</td>
+<td class="org-left">Delta: a Measure of Stylistic Difference</td>
+<td class="org-right">2002</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#burrows_delta:_2002">burrows_delta:_2002</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Hoover, David</td>
+<td class="org-left">Testing Burrows's Delta</td>
+<td class="org-right">2004</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#hoover_testing_2004">hoover_testing_2004</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">22</td>
+<td class="org-right">22</td>
+</tr>
+
+<tr>
+<td class="org-left">Craig, Hugh</td>
+<td class="org-left">Authorial Attribution and Computational Stylistics</td>
+<td class="org-right">1999</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#craig_authorial_1999">craig_authorial_1999</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">10</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Craig, Hugh, et al.</td>
+<td class="org-left">Shakespeare, Computers, and the Mystery of Authorship</td>
+<td class="org-right">2009</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#craig_shakespeare_2009">craig_shakespeare_2009</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Love, Harold</td>
+<td class="org-left">Attributing Authorship: an Introduction</td>
+<td class="org-right">2002</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#love_attributing_2002">love_attributing_2002</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">284</td>
+<td class="org-right">284</td>
+</tr>
+
+<tr>
+<td class="org-left">Burrows, John</td>
+<td class="org-left">Questions of Authorship</td>
+<td class="org-right">2003</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#burrows_questions_2003">burrows_questions_2003</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">5</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">Burrows, John</td>
+<td class="org-left">All the Way Through: Testing for Authorship in Different Frequency Strata</td>
+<td class="org-right">2007</td>
+<td class="org-right">0</td>
+<td class="org-left">authorship</td>
+<td class="org-left"><a class='org-ref-reference' href="#burrows_all_2007">burrows_all_2007</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Allison, et al.</td>
+<td class="org-left">Quantitative Formalism</td>
+<td class="org-right">2011</td>
+<td class="org-right">1</td>
+<td class="org-left">genre</td>
+<td class="org-left"><a class='org-ref-reference' href="#allison_quantitative_2011">allison_quantitative_2011</a></td>
+<td class="org-left">pamphlet</td>
+<td class="org-left">PDF</td>
+<td class="org-right">5</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Moretti, Franco</td>
+<td class="org-left">Graphs, Maps, Trees</td>
+<td class="org-right">2003</td>
+<td class="org-right">1</td>
+<td class="org-left">genre</td>
+<td class="org-left"><a class='org-ref-reference' href="#moretti_graphs_2003">moretti_graphs_2003</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">67</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Goodwin, J. et al.</td>
+<td class="org-left">Reading Graphs, Maps, Trees: Responses to Franco Moretti</td>
+<td class="org-right">2011</td>
+<td class="org-right">0</td>
+<td class="org-left">controversy</td>
+<td class="org-left"><a class='org-ref-reference' href="#goodwin_reading_2011">goodwin_reading_2011</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">142</td>
+<td class="org-right">142</td>
+</tr>
+
+<tr>
+<td class="org-left">Burrows, John</td>
+<td class="org-left">The Englishing of Juvenal</td>
+<td class="org-right">2002</td>
+<td class="org-right">0</td>
+<td class="org-left">translation</td>
+<td class="org-left"><a class='org-ref-reference' href="#burrows_englishing_2002-1">burrows_englishing_2002-1</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">22</td>
+<td class="org-right">22</td>
+</tr>
+
+<tr>
+<td class="org-left">Rybicki, Jan</td>
+<td class="org-left">Vive La Différence: Tracing the (Authorial) Gender Signal by Multivariate Analysis of Word Frequencies</td>
+<td class="org-right">2015</td>
+<td class="org-right">0</td>
+<td class="org-left">gender</td>
+<td class="org-left"><a class='org-ref-reference' href="#rybicki_vive_2015">rybicki_vive_2015</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">16</td>
+<td class="org-right">16</td>
+</tr>
+
+<tr>
+<td class="org-left">Hoover, David, et al.</td>
+<td class="org-left">Digital Literary Studies:   Corpus Approaches to Poetry, Prose, and Drama</td>
+<td class="org-right">2014</td>
+<td class="org-right">0</td>
+<td class="org-left">general</td>
+<td class="org-left"><a class='org-ref-reference' href="#hoover_digital_2014">hoover_digital_2014</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">286</td>
+<td class="org-right">286</td>
+</tr>
+
+<tr>
+<td class="org-left">Ramsay, Stephen</td>
+<td class="org-left">Reading Machines</td>
+<td class="org-right">2011</td>
+<td class="org-right">0.5</td>
+<td class="org-left">general</td>
+<td class="org-left"><a class='org-ref-reference' href="#ramsay_reading_2011">ramsay_reading_2011</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">115</td>
+<td class="org-right">57.5</td>
+</tr>
+
+<tr>
+<td class="org-left">van Cranenburgh, A.W.</td>
+<td class="org-left">Rich Statistical Parsing and Literary Language</td>
+<td class="org-right">2016</td>
+<td class="org-right">0</td>
+<td class="org-left">literariness</td>
+<td class="org-left"><a class='org-ref-reference' href="#van_cranenburgh_rich_2016">van_cranenburgh_rich_2016</a></td>
+<td class="org-left">dissertation</td>
+<td class="org-left">PDF</td>
+<td class="org-right">216</td>
+<td class="org-right">216</td>
+</tr>
+
+<tr>
+<td class="org-left">Long, Hoyt, and So, Richard</td>
+<td class="org-left">Literary Pattern Recognition: Modernism between Close Reading and Machine Learning</td>
+<td class="org-right">2016</td>
+<td class="org-right">0.5</td>
+<td class="org-left">literariness</td>
+<td class="org-left"><a class='org-ref-reference' href="#long_literary_2016">long_literary_2016</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">32</td>
+<td class="org-right">16.</td>
+</tr>
+
+<tr>
+<td class="org-left">Craig, Hugh</td>
+<td class="org-left">Contrast and Change in the Idiolects of Ben Jonson Characters</td>
+<td class="org-right">1999</td>
+<td class="org-right">0</td>
+<td class="org-left">characterization</td>
+<td class="org-left"><a class='org-ref-reference' href="#craig_contrast_1999">craig_contrast_1999</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">19</td>
+<td class="org-right">19</td>
+</tr>
+
+<tr>
+<td class="org-left">Bamman, D., Underwood, T., et al.</td>
+<td class="org-left">A Bayesian Mixed Effects Model of Literary Character</td>
+<td class="org-right">2014</td>
+<td class="org-right">0</td>
+<td class="org-left">characterization</td>
+<td class="org-left"><a class='org-ref-reference' href="#bamman_bayesian_2014">bamman_bayesian_2014</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">9</td>
+<td class="org-right">9</td>
+</tr>
+
+<tr>
+<td class="org-left">Culpeper, Jonathan</td>
+<td class="org-left">Keyness: Words, Parts-of-Speech and Semantic Categories in the Character-Talk of Shakespeare’s Romeo and Juliet</td>
+<td class="org-right">2009</td>
+<td class="org-right">0</td>
+<td class="org-left">characterization</td>
+<td class="org-left"><a class='org-ref-reference' href="#culpeper_keyness:_2009">culpeper_keyness:_2009</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">30</td>
+<td class="org-right">30</td>
+</tr>
+
+<tr>
+<td class="org-left">DeForest, Mary</td>
+<td class="org-left">The Density of Latinate Words in the Speeches of Jane Austen's Characters</td>
+<td class="org-right">2001</td>
+<td class="org-right">0</td>
+<td class="org-left">characterization</td>
+<td class="org-left"><a class='org-ref-reference' href="#deforest_density_2001">deforest_density_2001</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">12</td>
+<td class="org-right">12</td>
+</tr>
+
+<tr>
+<td class="org-left">Fish, Stanley</td>
+<td class="org-left">What is Stylistics and Why Are They Saying Such Terrible Things About It?</td>
+<td class="org-right">1979</td>
+<td class="org-right">0</td>
+<td class="org-left">controversy</td>
+<td class="org-left"><a class='org-ref-reference' href="#fish_what_1980">fish_what_1980</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Fish, Stanley</td>
+<td class="org-left">What is Stylistics and Why Are They Saying Such Terrible Things About It? Part II</td>
+<td class="org-right">1979</td>
+<td class="org-right">0</td>
+<td class="org-left">controversy</td>
+<td class="org-left"><a class='org-ref-reference' href="#fish_what_1979">fish_what_1979</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">19</td>
+<td class="org-right">19</td>
+</tr>
+
+<tr>
+<td class="org-left">Stubbs, M.</td>
+<td class="org-left">Conrad in the computer: examples of quantitative stylistic methods</td>
+<td class="org-right">2005</td>
+<td class="org-right">0</td>
+<td class="org-left">controversy</td>
+<td class="org-left"><a class='org-ref-reference' href="#stubbs_conrad_2005">stubbs_conrad_2005</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">19</td>
+<td class="org-right">19</td>
+</tr>
+
+<tr>
+<td class="org-left">Widdowson, H. G.</td>
+<td class="org-left">The novel features of text. Corpus analysis and stylistics</td>
+<td class="org-right">2008</td>
+<td class="org-right">0</td>
+<td class="org-left">controversy</td>
+<td class="org-left"><a class='org-ref-reference' href="#widdowson_novel_2008">widdowson_novel_2008</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">11</td>
+<td class="org-right">11</td>
+</tr>
+
+<tr>
+<td class="org-left">Cook, G.</td>
+<td class="org-left">Hocus pocus or God's truth: the dual identity of Michael Stubbs</td>
+<td class="org-right">2008</td>
+<td class="org-right">0</td>
+<td class="org-left">controversy</td>
+<td class="org-left"><a class='org-ref-reference' href="#cook_hocus_2008">cook_hocus_2008</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">22</td>
+<td class="org-right">22</td>
+</tr>
+
+<tr>
+<td class="org-left">McKenna, C. W. F.</td>
+<td class="org-left">The statistical analysis of style: Reflections on form, meaning, and ideology in the ‘Nausicaa’ episode of Ulysses</td>
+<td class="org-right">2001</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#mckenna_statistical_2001">mckenna_statistical_2001</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Hoover, David</td>
+<td class="org-left">Frequent Collocations and Authorial Style</td>
+<td class="org-right">2003</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#hoover_frequent_2003">hoover_frequent_2003</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">25</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Corduas, M, et al.</td>
+<td class="org-left">The distribution of humour in literary texts is not random: a statistical analysis</td>
+<td class="org-right">2008</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#corduas_distribution_2008-1">corduas_distribution_2008-1</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">17</td>
+<td class="org-right">17</td>
+</tr>
+
+<tr>
+<td class="org-left">Foster, D.W.</td>
+<td class="org-left">A Funeral Elegy: W[illiam] S[hakespeare]'s "Best-Speaking Witnesses"</td>
+<td class="org-right">1996</td>
+<td class="org-right">0</td>
+<td class="org-left">analysis</td>
+<td class="org-left"><a class='org-ref-reference' href="#foster_funeral_1996-1">foster_funeral_1996-1</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">25</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Murphy, S.</td>
+<td class="org-left">I will proclaim myself what I am: Corpus stylistics and the language of Shakespeare’s soliloquies</td>
+<td class="org-right">2015</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#murphy_i_2015">murphy_i_2015</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">16</td>
+<td class="org-right">16</td>
+</tr>
+
+<tr>
+<td class="org-left">Balossi, G.</td>
+<td class="org-left">A Corpus Linguistic Approach to Literary Language and Characterization: Virginia Woolf's The Waves</td>
+<td class="org-right">2014</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#balossi_corpus_2014">balossi_corpus_2014</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">300</td>
+<td class="org-right">300</td>
+</tr>
+
+<tr>
+<td class="org-left">Adolphs, S.</td>
+<td class="org-left">Point of view and semantic prosodies in Virginia Woolf’s To the Lighthouse</td>
+<td class="org-right">2002</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#adolphs_point_2002">adolphs_point_2002</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">20</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">Zhao, M.</td>
+<td class="org-left">The Art of Balance: A Corpus-assisted Stylistic Analysis of Woolfian Parallelism in To the Lighthouse</td>
+<td class="org-right">2012</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#zhao_art_2012">zhao_art_2012</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">19</td>
+<td class="org-right">19</td>
+</tr>
+
+<tr>
+<td class="org-left">Mahlberg, Michaela</td>
+<td class="org-left">Corpus Stylistics and Dickens's Fiction</td>
+<td class="org-right">2013</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#mahlberg_corpus_2013">mahlberg_corpus_2013</a></td>
+<td class="org-left">book</td>
+<td class="org-left">checked out Borrow Direct</td>
+<td class="org-right">178</td>
+<td class="org-right">178</td>
+</tr>
+
+<tr>
+<td class="org-left">Stewart, L. L.</td>
+<td class="org-left">Charles Brockden Brown: quantitative analysis and literary interpretation</td>
+<td class="org-right">2004</td>
+<td class="org-right">0</td>
+<td class="org-left">analyses</td>
+<td class="org-left"><a class='org-ref-reference' href="#stewart_charles_2003">stewart_charles_2003</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">9</td>
+<td class="org-right">9</td>
+</tr>
+
+<tr>
+<td class="org-left">Alison, et al.</td>
+<td class="org-left">Style at the Scale of the Sentence</td>
+<td class="org-right">2013</td>
+<td class="org-right">0</td>
+<td class="org-left">analysis</td>
+<td class="org-left"><a class='org-ref-reference' href="#allison_style_2013">allison_style_2013</a></td>
+<td class="org-left">pamphlet</td>
+<td class="org-left">PDF</td>
+<td class="org-right">30</td>
+<td class="org-right">30</td>
+</tr>
+
+<tr>
+<td class="org-left">Algee-Hewitt, et al.</td>
+<td class="org-left">On Paragraphs: Scale, Themes, and Narrative Form</td>
+<td class="org-right">2015</td>
+<td class="org-right">0</td>
+<td class="org-left">analysis</td>
+<td class="org-left"><a class='org-ref-reference' href="#algee-hewitt_paragraphs:_2015">algee-hewitt_paragraphs:_2015</a></td>
+<td class="org-left">pamphlet</td>
+<td class="org-left">PDF</td>
+<td class="org-right">23</td>
+<td class="org-right">23</td>
+</tr>
+
+<tr>
+<td class="org-left">Hoover, David</td>
+<td class="org-left">Corpus Stylistics, Stylometry, and the Styles of Henry James</td>
+<td class="org-right">2007</td>
+<td class="org-right">0</td>
+<td class="org-left">analysis</td>
+<td class="org-left"><a class='org-ref-reference' href="#hoover_corpus_2007-1">hoover_corpus_2007-1</a></td>
+<td class="org-left">article</td>
+<td class="org-left">PDF</td>
+<td class="org-right">29</td>
+<td class="org-right">29</td>
+</tr>
+
+<tr>
+<td class="org-left">Zyngier, et al.</td>
+<td class="org-left">Directions in Empirical Literary Studies</td>
+<td class="org-right">2008</td>
+<td class="org-right">0</td>
+<td class="org-left">analysis</td>
+<td class="org-left"><a class='org-ref-reference' href="#zyngier_directions_2008">zyngier_directions_2008</a></td>
+<td class="org-left">book</td>
+<td class="org-left">PDF</td>
+<td class="org-right">372</td>
+<td class="org-right">372</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">49</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">45</td>
+<td class="org-right">2922</td>
+<td class="org-right">2749.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jonathan Reeve</p>
+<p class="date">Created: 2017-11-11 Sat 12:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

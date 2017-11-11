@@ -1,0 +1,269 @@
+* Oral Exam Reading List
+This oral exam reading list is centered around a major field of British literary
+modernism. Although literary modernism, as conceived here, is a protean and
+permeable designation, rather than a circumscribed category, the writers most
+represented in this list, such as Joyce, Woolf, and Yeats, are typical of a
+modernist survey course. The list expands outward from these writers, however,
+and includes those published alongside them in the influential "little
+magazines" of the 1910s and 20s, as well as a few non-British writers working in
+Britain or its colonies. A minor list of Victorian literature, which the moderns
+reacted to, and in many ways extended, provides a necessary background. This is
+not a list, however, which is completely distinct from the modernist list, as
+some writers, like Thomas Hardy, appear in both. Here, well-known novelists such
+as Dickens, Stevenson, and Eliot, appear alongside theorists like Arnold
+and Ruskin. Influential journals, such as the decadent '90s /The Yellow Book/,
+are also included. The secondary minor list is methodological, and contains recent
+books and articles concerning computational approaches to literary style. Since
+computational methods are an interdisciplinary by nature, some of these articles
+extend into the fields of statistics, corpus linguistics, and natural language
+processing. Although the list was curated to select a wide variety of
+methodological approaches, articles that treat the works of British modernists
+or Victorian writers are most represented here. These lists are linked in other
+ways, as well, such as through complementary pairs: Charlotte Brontë's /Jane
+Eyre/ with Jean Rhys's reworking /The Wide Sargasso Sea/, for example. The
+subjects of quantitative analyses are similarly paired: Mahlberg's /Corpus
+Stylistics and Dickens's Fiction/ deals primarily with /David Copperfield/;
+Ramsay's /Reading Machines and Balossi's "A Corpus Linguistic Approach to
+Literary Language and Characterization" analyze Woolf's /The Waves/; Zhao's "Art
+of Balance" discusses /To the Lighthouse/, and McKenna's "Statistical Analysis
+of Style" deals with /Ulysses/.
+
+** Progress
+| List          | Total Works | Total Pages | Remaining Pages | % Complete |
+|---------------+-------------+-------------+-----------------+------------|
+| Modernist     |          60 |       15672 |          7531.5 |  38.308424 |
+| Victorian     |          29 |       11605 |          6224.3 |  43.068691 |
+| Style         |          49 |        2922 |          2749.5 |  4.9794661 |
+|---------------+-------------+-------------+-----------------+------------|
+| Total         |         138 |       30199 |         16505.3 |  45.344879 |
+|---------------+-------------+-------------+-----------------+------------|
+| Days to exam  |         160 |             |                 |            |
+| Pages per day |   103.15813 |             |                 |            |
+#+TBLFM: @2$2=remote(Modernist,@>$1)::@2$3=remote(Modernist,@>$8)::@2$4=remote(Modernist,@>$9)::@3$2=remote(Victorian,@>$1)::@3$3=remote(Victorian,@>$8)::@4$2=remote(Style,@>$1)::@4$4=remote(Style,@>$10)::@5$2=vsum(@I..@II)::@5$3=vsum(@I..@II)::@5$4=vsum(@I..@II)::@5$5=100-($4/$3)*100::@6$2='(org-time-stamp-to-now "<2018-04-20 Fri>")::@7$2=@5$4/@6$2
+
+** Major Field: British Modernism
+
+Although the boundaries of literary modernism extend with every new monograph on
+the subject, and although it is often pluralized to "modernisms," better
+reflecting the international nature of the cultural phenomenon, this list is
+primarily modeled after the readings of a survey course in British modernism,
+and contains mostly canonical writers typically associated with the period,
+either British, or writing from Britain or its colonies. This departs from the
+typical survey course, however, in its inclusion of the 1910s and 20s journals
+and little magazines in which many of these works were originally published:
+Anderson's /The Little Review/, Lewis's /Blast/, Ford's /The English Review/,
+and Pound's editorship of /The Dial/. These are selected not to provide
+alternative editions of the canonical works included here, but to provide
+contexts for the publishing environment of early modernism. Chronologically,
+this list chiefly includes the generation alive and working in the 10s and 20s,
+so although the temporal boundary of modernism is often drawn in the 1930s, I am
+extending it to include, in some cases, the writers' later works: Woolf's 1941
+/Between the Acts/, Pound's middle Cantos, and Jean Rhys's 1966 /The Wide
+Sargasso Sea/. There are also works of nonfiction that were either explicitly
+influential to these writers, or in some other way informed the zeitgeist:
+Frazer's /Golden Bough/, Freud's /Interpretation of Dreams/, and Pound's /ABC of
+Reading/, for instance. A secondary list, below the divider, contains seminal
+works of criticism that discuss these writers, their era, their literary
+movement, or the publishing environment in which they worked.
+
+#+NAME: Modernist
+| Author                  | Title                                                              |      Year | Read | Genre         | Key                            | Availability                 | Pages | Remaining |
+|-------------------------+--------------------------------------------------------------------+-----------+------+---------------+--------------------------------+------------------------------+-------+-----------|
+| Anderson, Margeret, ed. | The Little Review (selected issues)                                |      1914 |    0 | Journal       | cite:anderson_little_1914      |                              |       |         0 |
+| Anderson, Margeret, ed. | The Little Review 1-1                                              |      1914 |    0 | Journal       | cite:anderson_little_1914-1    | PDF                          |    68 |        68 |
+| Anderson, Margeret, ed. | The Little Review 1-2 Emma Goldman Controversy                     |      1914 |    0 | Journal       | cite:anderson_little_1914-2    | PDF                          |    68 | 68        |
+| Anderson, Margeret, ed. | The Little Review 3-6 "Blank Issue"                                |      1914 |    0 | Journal       | cite:anderson_little_1916      | PDF                          |    32 |        32 |
+| Anderson, Margeret, ed. | The Little Review 11-4 Ulysses I                                   |      1914 |    0 | Journal       | cite:anderson_little_1918      | PDF                          |    68 |        68 |
+| Anderson, Margeret, ed. | The Little Review 11-6 Nausicaa                                    |      1914 |    0 | Journal       | cite:anderson_little_1920      | PDF                          |    74 |        74 |
+| Anderson, Margeret, ed. | The Little Review 1-2 (article on Ulysses trial)                   |      1914 |    0 | Journal       | cite:anderson_little_1921      | PDF                          |    68 |        68 |
+| Auden, W.H.             | Selected Poems                                                     |      2009 |  0.5 | Poetry        | cite:auden_selected_1979       | PDF                          |   350 |      175. |
+| Barnes, Djuna           | Nightwood                                                          |      1936 |    1 | Novel         | cite:barnes_nightwood_2006     | EPUB on GPB                  |   214 |         0 |
+| Beerbohm, Max           | Seven Men                                                          |      1919 |    0 | Short stories | cite:beerbohm_seven_1920       | PDF                          |   238 |       238 |
+| Brooke, Rupert          | Poems anthologized in /The Penguin Book of First World War Poetry/ | 1910s-20s |    0 | Poetry        | cite:walter_poems_2006-2       | EPUB on GPB                  |    92 |        92 |
+| Conrad, Joseph          | Heart of Darkness                                                  |      1902 |    1 | Novel         | cite:conrad_heart_1999         | EPUB on GPB                  |   270 |         0 |
+| Conrad, Joseph          | The Secret Agent                                                   |      1907 |    1 | Novel         | cite:conrad_secret_2009        | EPUB on GPB                  |   255 |         0 |
+| Eliot, T.S.             | The Love Song of J. Alfred Prufrock                                |      1917 |    1 | Poetry        | cite:eliot_collected_1963      | PDF                          |     5 |         0 |
+| Eliot, T.S.             | The Waste Land                                                     |      1922 |    1 | Poetry        | cite:eliot_waste_2001          | Paper, Norton                |    50 |         0 |
+| Eliot, T.S.             | Four Quartets                                                      |      1944 |    1 | Poetry        | cite:eliot_collected_1963      | PDF                          |    20 |         0 |
+| Ford, Ford Madox, ed.   | The English Review (selected issues)                               |   1908-12 |    0 | Journal       | see issues                     |                              |       |         0 |
+| Ford, Ford Madox, Ed.   | The English Review 1-1                                             |      1907 |    0 | Journal       | cite:hueffer_english_1908      | PDF                          |   212 |       212 |
+| Ford, Ford Madox, Ed.   | The English Review 3-12                                            |      1908 |    0 | Journal       | cite:hueffer_english_1909      | PDF                          |   208 |       208 |
+| Ford, Ford Madox, ed.   | The Good Soldier                                                   |      1915 |    0 | Novel         | cite:ford_good_2003            | EPUB on GPB                  |   368 |       368 |
+| Forster, E.M.           | A Room with a View                                                 |      1908 |    0 | Novel         | cite:forster_room_2012         | EPUB on GPB                  |   176 |       176 |
+| Forster, E.M.           | A Passage to India                                                 |      1924 |    1 | Novel         | cite:forster_passage_1984      | Paper                        |   362 |         0 |
+| Frazer, James           | The Golden Bough                                                   |      1890 |  0.5 | Nonfiction    | cite:frazer_golden_1996        | EPUB on GPB                  |   516 |      258. |
+| Freud, Sigmund          | The Interpretation of Dreams                                       |      1900 |  0.5 | Nonfiction    | cite:freud_interpretation_2010 | Paper ordered                |   557 |     278.5 |
+| Freud, Sigmund          | Civilization and its Discontents                                   |      1930 |    0 | Nonfiction    | cite:freud_civilization_2015   | EPUB on GPB                  |   111 |       111 |
+| Hardy, Thomas           | Jude the Obscure                                                   |      1896 |    1 | Novel         | cite:hardy_jude_2015           | Paper, Norton                |   451 |         0 |
+| Joyce, James            | A Portrait of the Artist as a Young Man                            |      1914 |    1 | Novel         | cite:joyce_portrait_2007       | Paper, EPUB on GBP           |   490 |         0 |
+| Joyce, James            | Dubliners                                                          |      1914 |    1 | Novel         | cite:joyce_dubliners:_2006     | EPUB on GBP                  |   369 |         0 |
+| Joyce, James            | Ulysses                                                            |      1922 |    1 | Novel         | cite:joyce_ulysses_1986        | PDF                          |   668 |         0 |
+| Kipling, Rudyard        | Kim                                                                |      1901 |    1 | Novel         | cite:kipling_kim:_2002         | Paper - Norton               |   480 |         0 |
+| Lawrence, D.H.          | Sons and Lovers                                                    |      1913 |  0.5 | Novel         | cite:lawrence_sons_1913        | PDF                          |   537 |     268.5 |
+| Lawrence, D.H.          | Lady Chatterley's Lover                                            |      1928 |    1 | Novel         | cite:lawrence_lady_2006        | Paper - Penguin Deluxe       |   400 |       400 |
+| Lewis, Wyndham          | Tarr                                                               |      1918 |    0 | Novel         | cite:lewis_tarr_1918           | PDF                          |   393 |       393 |
+| Lewis, Wyndham, ed.     | Blast (selected issues)                                            |      1914 |    0 | Journal       | see issues                     |                              |       |         0 |
+| Lewis, Wyndham, Ed.     | The Blast 1                                                        |      1914 |    0 | Journal       | cite:lewis_blast_1914          | PDF                          |   212 |       212 |
+| Lewis, Wyndham, Ed.     | The Blast 2                                                        |      1915 |    0 | Journal       | cite:lewis_blast_1915          | PDF                          |   112 |       112 |
+| Loy, Mina               | The Lunar Baedeker                                                 |      1923 |    0 | Poetry        | cite:loy_lost_2015             | EPUB on GPB                  |   256 |       256 |
+| Mansfield, Katherine    | The Garden Party and Other Stories                                 |      1922 |  0.5 | Short stories | cite:mansfield_katherine_2006  | Paper, Norton                |   430 |      215. |
+| Orage, A. R.            | The New Age (selected issues)                                      |     1920s |    0 | Journal       |                                |                              |       |         0 |
+| Orwell, Geroge          | Burmese Days                                                       |      1934 |    1 | Novel         | cite:orwell_burmese_1986       | EPUB on GPB                  |   277 |         0 |
+| Owen, Wilfred           | Poems anthologized in /The Penguin Book of First World War Poetry/ | 1910s-20s |    0 | Poetry        | cite:walter_poems_2006         | EPUB on GBP                  |    92 |        92 |
+| Pound, Ezra             | ABC of Reading                                                     |      1934 |  0.5 | Nonfiction    | cite:pound_abc_1960            | PDF                          |   206 |      103. |
+| Pound, Ezra             | The Cantos                                                         |      1948 |  0.5 | Poetry        | cite:pound_cantos_1996         | PDF                          |   824 |      412. |
+| Pound, Ezra, ed.        | The Dial (selected issues)                                         |   1920-22 |    0 | Journal       | see issues                     |                              |       |         0 |
+| Rhys, Jean              | The Left Bank and Other Stories                                    |      1927 |    0 | Short Stories | cite:rhys_collected_1992       | Paper                        |   406 |       406 |
+| Rhys, Jean              | Wide Sargasso Sea                                                  |      1966 |    0 | Novel         | cite:rhys_wide_1999            | Paper - Norton               |   270 |       270 |
+| Richardson, Dorothy     | Pointed Roofs                                                      |      1915 |    0 | Novel         | cite:richardson_pointed_1919   | PDF                          |   285 |       285 |
+| Richardson, Dorothy     | The Tunnel                                                         |      1919 |    0 | Novel         | cite:richardson_tunnel_1919    | PDF                          |   332 |       332 |
+| Sassoon, Siegfried      | Poems anthologized in /The Penguin Book of First World War Poetry/ | 1910s-20s |    0 | Poetry        | cite:walter_poems_2006-1       | EPUB on GBP                  |    92 |        92 |
+| Shaw, George Bernard    | Pygmalion                                                          |      1913 |    0 | Play          | cite:shaw_george_2002          | Paper - Norton               |   200 |       200 |
+| Synge, J.M.             | Playboy of the Western World                                       |      1907 |    1 | Play          | cite:synge_playboy_1911        | PDF                          |   124 |         0 |
+| Wells, H.G.             | Anne Veronica                                                      |      1909 |    1 | Novel         | cite:wells_ann_2015            | Epub - GPB                   |       |         0 |
+| Wells, H.G.             | Tono-Bungay                                                        |      1909 |    1 | Novel         | cite:wells_tono-bungay_2011    | Epub - Kindle                |   384 |         0 |
+| Wells, H.G.             | The Outline of History                                             |      1919 |  0.5 | Nonfiction    | cite:wells_outline_1921        | PDF                          |  1197 |     598.5 |
+| Woolf, Virginia         | Mrs. Dalloway                                                      |      1915 |    1 | Novel         | cite:woolf_mrs_2016            | Epub - GBP                   |   190 |         0 |
+| Woolf, Virginia         | To the Lighthouse                                                  |      1927 |    1 | Nonfiction    | cite:woolf_lighthouse_1993     | Epub - GPB                   |   267 |         0 |
+| Woolf, Virginia         | The Waves                                                          |      1931 |  0.5 | Novel         | cite:woolf_waves_2014          | Epub - GPB                   |   300 |      150. |
+| Woolf, Virginia         | Between the Acts                                                   |      1941 |    1 | Novel         | cite:woolf_between_2008        | Epub - Kindle                |   288 |         0 |
+| West, Rebecca           | Return of the Soldier                                              |      1918 |    0 | Novel         | cite:west_return_2010          | Epub - GBP                   |   240 |       240 |
+| Yeats, W.B.             | Selected Poems                                                     | 1910s-20s |    1 | Poetry        | cite:yeats_yeatss_2000         | Paper - Norton               |   518 |         0 |
+|-------------------------+--------------------------------------------------------------------+-----------+------+---------------+--------------------------------+------------------------------+-------+-----------|
+| Kenner, Hugh            | Pound Era, The                                                     |      1971 |  0.6 | Criticism     | cite:kenner_pound_1971         | PDF                          |   606 |      303. |
+| Ardis, Ann              | Modernism and Cultural Conflict                                    |      2002 |    0 | Criticism     | cite:ardis_modernism_2002      |                              |   199 |       199 |
+| Williams, Raymond       | Politics of Modernism                                              |      1996 |    0 | Criticism     | cite:williams_politics_1996    |                              |   208 |       208 |
+| Meisel, Perry           | Myth of the Modern, The                                            |      1989 |    0 | Criticism     | cite:meisel_myth_1987          | Butler                       |   263 |       263 |
+| Leveanson, Michael      | Genealogy of Modernism                                             |      1986 |    0 | Criticism     | cite:levenson_genealogy_1986   |                              |   272 |       272 |
+| Calinescu, Matei        | Five Faces of Modernity                                            |      1987 |    0 | Criticism     | cite:calinescu_five_1987       | Butler                       |   395 |       395 |
+| Moretti, Franco         | Signs Taken for Wonders                                            |      1983 |    0 | Criticism     | cite:moretti_signs_1988        | Butler                       |   324 |       324 |
+| Bulson, Eric            | Little Magazine, World Form                                        |      2016 |    0 | Criticism     | cite:bulson_little_2016        | Butler Offsite, GB           |   352 |       352 |
+| Morrison, Mark          | The Public Face of Modernism                                       |      2001 |    0 | Criticism     | cite:morrisson_public_2001     |                              |       |         0 |
+| Scholes, Robert         | Modernism in the Magazines                                         |      2010 |    0 | Criticism     | cite:scholes_modernism_2010    | Avail. through Borrow Direct |   340 |       340 |
+|-------------------------+--------------------------------------------------------------------+-----------+------+---------------+--------------------------------+------------------------------+-------+-----------|
+| 60                      |                                                                    |           |    0 |               |                                |                              | 15672 | 7531.5    |
+#+TBLFM: @>$1='(length '(@I..@II))::@>$4='(length(org-lookup-all "Yes" '(@I..@II) nil));E::@>$8=vsum(@I..@II)::$9=$8-($8*$4)::@>$9=vsum(@I..@II)
+
+** Minor Field: Victorian Literature
+
+As period adjacent to British modernism, the Victorian period forms an important
+background to it. This minor list represents works selected from those commonly
+taught in a survey course of Victorian literature. It consists primarily of
+novels, with selected poems by Tennyson, Hopkins, and Rosetti. There are also
+two plays: George Bernard Shaw's "Mrs Warren's Profession," and Oscar Wilde's
+"The Importance of Being Earnest." Works known for their realism (/Middlemarch/)
+or naturalism (/Tess of the d'Ubervilles/) are paired with works that deal with
+the supernatural (/The Moonstone/, /Dracula/). Also included are two non-fiction
+works from Victorian critics and essayists: Arnold's /Culture and Anarchy/ and
+Ruskin's /Selected Writings/. Two journals are included: the decadent 1890s /The
+Yellow Book/, and the more populist /The Graphic/, especially for their
+influence on literary modernism.
+
+#+NAME: Victorian
+| Author                       | Title                                       |    Year | Read | Genre         | Key                           | Availability          | Pages | Remaining |
+|------------------------------+---------------------------------------------+---------+------+---------------+-------------------------------+-----------------------+-------+-----------|
+| Arnold, Matthew              | Culture and Anarchy                         |    1867 |    0 | Non-fiction   | cite:arnold_culture_1869      | PDF                   |   344 |       344 |
+| Brontë, Charlotte            | Jane Eyre                                   |    1847 |    0 | Novel         | cite:bronte_jane_2016         | PDF and paper, Norton |   385 |       385 |
+| Brontë, Emily                | Wuthering Heights                           |    1845 |    0 | Novel         | cite:bronte_wuthering_2007    | EPUB - GPB            |   404 |       404 |
+| Carlyle, Thomas              | Sartor Resartus                             |    1836 |    0 | Novel         | cite:carlyle_sartor_1872      | PDF                   |   248 |       248 |
+| Collins, Wilkie              | Moonstone, The                              |    1868 |  0.5 | Novel         | cite:collins_moonstone_1999   | EPUB - GPB            |   637 | 318.5     |
+| Dickens, Charles             | Bleak House                                 |    1852 |    1 | Novel         | cite:dickens_bleak_1977       | Paper - Norton        |   760 |         0 |
+| Dickens, Charles             | David Copperfield                           |    1850 |  0.5 | Novel         | cite:dickens_david_1990       | Paper - Norton        |   854 |      427. |
+| Doyle, Arthur Conan          | The Adventures of Sherlock Holmes           |    1902 |    1 | Short stories | cite:doyle_new_2007           | EPUB - Amazon         |   300 |         0 |
+| Eliot, George                | Middlemarch                                 |    1871 |    1 | Novel         | cite:maertz_middlemarch_2004  | EPUB - GPB            |   750 |         0 |
+| Eliot, George                | Daniel Deronda                              |    1876 |    0 | Novel         | cite:eliot_daniel_2009        | EPUB - GPB            |   724 |       724 |
+| Gaskell, Elizabeth           | North and South                             |    1855 |    1 | Novel         | cite:gaskell_north_2005       | Paper - Norton        |   585 |         0 |
+| Hardy, Thomas                | Tess of the d'Ubervilles                    |    1891 |    0 | Novel         | cite:hardy_tess_2007          | Paper - Broadview     |   400 |       400 |
+| Hopkins, Gerard Manley       | Selected Poems                              | 1860-80 |  0.1 | Poetry        | cite:hopkins_selected_2013    | EPUB - GBP            |   124 |     111.6 |
+| James, Henry                 | Turn of the Screw, The                      |    1898 |    1 | Novella       | cite:james_turn_2010          | EPUB - GBP            |   304 |         0 |
+| Rosetti, Christina           | Goblin Market and Other Poems               |    1859 |  0.1 | Poetry        | cite:rossetti_goblin_1865     | PDF                   |   212 |     190.8 |
+| Ruskin, John                 | Selected Writings                           |   1860s |  0.7 | Non-fiction   | cite:ruskin_selected_2009     | Paper                 |   368 |     110.4 |
+| Shaw, George Bernard         | Mrs Warren's Profession                     |    1893 |    1 | Drama         | cite:shaw_george_2002         | Paper ordered         |   200 |         0 |
+| Stevenson, Robert Louis      | The Strange Case of Dr. Jekyll and Mr. Hyde |    1886 |    1 | Novel         | cite:stevenson_strange_2005   | EPUB - GBP            |   220 |         0 |
+| Stoker, Bram                 | Dracula                                     |    1897 |    1 | Novel         | cite:stoker_dracula_1997      | EPUB - GBP            |   493 |         0 |
+| Thackeray, William Makepeace | Vanity Fair                                 |    1847 |    1 | Novel         | cite:thackeray_vanity_1994    | Paper - Norton        |   689 |         0 |
+| Trollope, Anthony            | Barchester Towers                           |    1857 |    0 | Novel         | cite:trollope_barchester_1904 | PDF                   |   372 |       372 |
+| Tennyson, Lord Alfred        | Selected Poems                              | 1830-90 |    0 | Poetry        | cite:ricks_tennyson:_2014     | PDF                   |  1072 |      1072 |
+| Wilde, Oscar                 | Picture of Dorian Gray                      |    1890 |    0 | Novella       | cite:wilde_picture_2010       | EPUB - GBP            |   268 |         0 |
+| Wilde, Oscar                 | The Importance of Being Earnest             |    1895 |    1 | Drama         | cite:wilde_importance_2009    | Paper - Broadview     |   144 |         0 |
+| du Maurier, George           | Trilby                                      |    1894 |    1 | Novel         | cite:maurier_trilby_2003      | Paper - Broadview     |   447 |         0 |
+| Various                      | The Yellow Book (selected issues)           |   1890s |    0 | Journal       | cite:denisoff_yellow_2017     |                       |       |         0 |
+| Various                      | The Yellow Book 1                           |   1890s |    0 | Journal       | cite:beardsley_yellow_1894    | PDF                   |   301 |       301 |
+| Various                      | The Graphic (selected issues)               |   1890s |    0 | Journal       |                               |                       |       |         0 |
+| Wells, H.G.                  | The Time Machine                            |    1897 |    1 | Novella       | cite:wells_time_2001          | EPUB - Kindle         |       |         0 |
+|------------------------------+---------------------------------------------+---------+------+---------------+-------------------------------+-----------------------+-------+-----------|
+| 29                           |                                             |         | 13.9 |               |                               |                       | 11605 | 5408.3    |
+#+TBLFM: @>$1='(length '(@I..@II))::@>$4=vsum(@I..@II)::@>$8=vsum(@I..@II)::$9=$8-($8*$4)::@>$9=vsum(@I..@II)
+
+** Minor Field: Computational Approaches to the Study of Literary Style
+
+This minor reading list collects computational approaches to the study of
+literary style, an interdisciplinary methodological category that spans the
+fields of the digital humanities, stylistics, and corpus linguistics. As style
+is a variously interpreted, broad category, this list is subdivided into studies
+of genre, character style (characterization), gendered style, the style of
+"literariness," and style in translation. A few early quantitative analyses are
+included here, in order to provide background; approaches to the study of
+individual writers' styles, including statistical stylistics (stylometry) are
+also included, extending into the sub-field of authorship attribution. Finally,
+important objections to computational methods, and to stylistics more generally,
+are included, as they are frequently referenced in these studies.
+
+#+NAME: Style
+| Author                            | Title                                                                                                              | Year | Read | Subject          | Key                                 | Type         | Availability              | Pages | Remaining |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------+------+------+------------------+-------------------------------------+--------------+---------------------------+-------+-----------|
+| Mendenhall, T.C.                  | The Characteristic Curves of Composition                                                                           | 1887 |    1 | history          | cite:mendenhall_characteristic_1887 | article      | PDF                       |    12 |        12 |
+| Mendenhall, T.C.                  | A Mechanical Solution of a Literary Problem                                                                        | 1901 |    1 | history          | cite:mendenhall_mechanical_1901     | article      | PDF                       |     4 |         4 |
+| Zipf, G.K.                        | Selected Studies in the Principle of Relative Frequency in Language                                                | 1932 |    0 | history          | cite:zipf_selected_1932             | book         | PDF                       |       |         0 |
+| Yule, G. Udny                     | On Sentence-Length as a Statistical Characteristic of Style in Prose                                               | 1939 |    1 | history          | cite:yule_sentence-length_1939      | article      | PDF                       |    27 |         0 |
+| Yule, G. Udny                     | The Statistical Study of Literary Vocabulary                                                                       | 1944 |    0 | history          | cite:yule_statistical_1944          | book         | offsite - requested       |       |         0 |
+| Fucks, W.                         | On Mathematical Analysis of Style                                                                                  | 1952 |    1 | history          | cite:fucks_mathematical_1952        | article      | PDF                       |     7 |         7 |
+| Luhn, H.P.                        | A Statistical Approach to Mechanized Encoding and Searching of Literary Information                                | 1957 |    0 | history          | cite:luhn_statistical_1957          | article      | PDF                       |    12 |        12 |
+| Mosteller, F. and Wallace, D.     | Inference and Disputed Authorship: the Federalist Papers                                                           | 1964 |    0 | history          | cite:mosteller_inference_2007       | book         | mathematics library       |   362 |       362 |
+| Burton, Dolores                   | Shakespeare's grammatical style; a computer-assisted analysis of Richard II and Anthony and Cleopatra              | 1973 |    0 | history          | cite:burton_shakespeares_1973       | book         | at Butler                 |       |         0 |
+| Holmes, D.I.                      | The Analysis of Literary Style                                                                                     | 1985 |    0 | history          | cite:holmes_analysis_1985           | article      | PDF                       |    12 |        12 |
+| Burrows, John                     | Delta: a Measure of Stylistic Difference                                                                           | 2002 |    0 | authorship       | cite:burrows_delta:_2002            | article      | PDF                       |    20 |        20 |
+| Hoover, David                     | Testing Burrows's Delta                                                                                            | 2004 |    0 | authorship       | cite:hoover_testing_2004            | article      | PDF                       |    22 |        22 |
+| Craig, Hugh                       | Authorial Attribution and Computational Stylistics                                                                 | 1999 |    0 | authorship       | cite:craig_authorial_1999           | article      | PDF                       |    10 |        10 |
+| Craig, Hugh, et al.               | Shakespeare, Computers, and the Mystery of Authorship                                                              | 2009 |    0 | authorship       | cite:craig_shakespeare_2009         | book         | PDF                       |       |         0 |
+| Love, Harold                      | Attributing Authorship: an Introduction                                                                            | 2002 |    0 | authorship       | cite:love_attributing_2002          | book         | PDF                       |   284 |       284 |
+| Burrows, John                     | Questions of Authorship                                                                                            | 2003 |    0 | authorship       | cite:burrows_questions_2003         | article      | PDF                       |     5 |         5 |
+| Burrows, John                     | All the Way Through: Testing for Authorship in Different Frequency Strata                                          | 2007 |    0 | authorship       | cite:burrows_all_2007               | article      | PDF                       |    20 |        20 |
+| Allison, et al.                   | Quantitative Formalism                                                                                             | 2011 |    1 | genre            | cite:allison_quantitative_2011      | pamphlet     | PDF                       |     5 |         0 |
+| Moretti, Franco                   | Graphs, Maps, Trees                                                                                                | 2003 |    1 | genre            | cite:moretti_graphs_2003            | book         | PDF                       |    67 |         0 |
+| Goodwin, J. et al.                | Reading Graphs, Maps, Trees: Responses to Franco Moretti                                                           | 2011 |    0 | controversy      | cite:goodwin_reading_2011           | book         | PDF                       |   142 |       142 |
+| Burrows, John                     | The Englishing of Juvenal                                                                                          | 2002 |    0 | translation      | cite:burrows_englishing_2002-1      | article      | PDF                       |    22 |        22 |
+| Rybicki, Jan                      | Vive La Différence: Tracing the (Authorial) Gender Signal by Multivariate Analysis of Word Frequencies             | 2015 |    0 | gender           | cite:rybicki_vive_2015              | article      | PDF                       |    16 |        16 |
+| Hoover, David, et al.             | Digital Literary Studies:   Corpus Approaches to Poetry, Prose, and Drama                                          | 2014 |    0 | general          | cite:hoover_digital_2014            | book         | PDF                       |   286 |       286 |
+| Ramsay, Stephen                   | Reading Machines                                                                                                   | 2011 |  0.5 | general          | cite:ramsay_reading_2011            | book         | PDF                       |   115 |      57.5 |
+| van Cranenburgh, A.W.             | Rich Statistical Parsing and Literary Language                                                                     | 2016 |    0 | literariness     | cite:van_cranenburgh_rich_2016      | dissertation | PDF                       |   216 |       216 |
+| Long, Hoyt, and So, Richard       | Literary Pattern Recognition: Modernism between Close Reading and Machine Learning                                 | 2016 |  0.5 | literariness     | cite:long_literary_2016             | article      | PDF                       |    32 |       16. |
+| Craig, Hugh                       | Contrast and Change in the Idiolects of Ben Jonson Characters                                                      | 1999 |    0 | characterization | cite:craig_contrast_1999            | article      | PDF                       |    19 |        19 |
+| Bamman, D., Underwood, T., et al. | A Bayesian Mixed Effects Model of Literary Character                                                               | 2014 |    0 | characterization | cite:bamman_bayesian_2014           | article      | PDF                       |     9 |         9 |
+| Culpeper, Jonathan                | Keyness: Words, Parts-of-Speech and Semantic Categories in the Character-Talk of Shakespeare’s Romeo and Juliet    | 2009 |    0 | characterization | cite:culpeper_keyness:_2009         | article      | PDF                       |    30 |        30 |
+| DeForest, Mary                    | The Density of Latinate Words in the Speeches of Jane Austen's Characters                                          | 2001 |    0 | characterization | cite:deforest_density_2001          | article      | PDF                       |    12 |        12 |
+| Fish, Stanley                     | What is Stylistics and Why Are They Saying Such Terrible Things About It?                                          | 1979 |    0 | controversy      | cite:fish_what_1980                 | article      | PDF                       |       |         0 |
+| Fish, Stanley                     | What is Stylistics and Why Are They Saying Such Terrible Things About It? Part II                                  | 1979 |    0 | controversy      | cite:fish_what_1979                 | article      | PDF                       |    19 |        19 |
+| Stubbs, M.                        | Conrad in the computer: examples of quantitative stylistic methods                                                 | 2005 |    0 | controversy      | cite:stubbs_conrad_2005             | article      | PDF                       |    19 |        19 |
+| Widdowson, H. G.                  | The novel features of text. Corpus analysis and stylistics                                                         | 2008 |    0 | controversy      | cite:widdowson_novel_2008           | article      | PDF                       |    11 |        11 |
+| Cook, G.                          | Hocus pocus or God's truth: the dual identity of Michael Stubbs                                                    | 2008 |    0 | controversy      | cite:cook_hocus_2008                | article      | PDF                       |    22 |        22 |
+| McKenna, C. W. F.                 | The statistical analysis of style: Reflections on form, meaning, and ideology in the ‘Nausicaa’ episode of Ulysses | 2001 |    0 | analyses         | cite:mckenna_statistical_2001       | article      | PDF                       |    20 |        20 |
+| Hoover, David                     | Frequent Collocations and Authorial Style                                                                          | 2003 |    0 | analyses         | cite:hoover_frequent_2003           | article      | PDF                       |    25 |        25 |
+| Corduas, M, et al.                | The distribution of humour in literary texts is not random: a statistical analysis                                 | 2008 |    0 | analyses         | cite:corduas_distribution_2008-1    | article      | PDF                       |    17 |        17 |
+| Foster, D.W.                      | A Funeral Elegy: W[illiam] S[hakespeare]'s "Best-Speaking Witnesses"                                               | 1996 |    0 | analysis         | cite:foster_funeral_1996-1          | article      | PDF                       |    25 |        25 |
+| Murphy, S.                        | I will proclaim myself what I am: Corpus stylistics and the language of Shakespeare’s soliloquies                  | 2015 |    0 | analyses         | cite:murphy_i_2015                  | article      | PDF                       |    16 |        16 |
+| Balossi, G.                       | A Corpus Linguistic Approach to Literary Language and Characterization: Virginia Woolf's The Waves                 | 2014 |    0 | analyses         | cite:balossi_corpus_2014            | book         | PDF                       |   300 |       300 |
+| Adolphs, S.                       | Point of view and semantic prosodies in Virginia Woolf’s To the Lighthouse                                         | 2002 |    0 | analyses         | cite:adolphs_point_2002             | article      | PDF                       |    20 |        20 |
+| Zhao, M.                          | The Art of Balance: A Corpus-assisted Stylistic Analysis of Woolfian Parallelism in To the Lighthouse              | 2012 |    0 | analyses         | cite:zhao_art_2012                  | article      | PDF                       |    19 |        19 |
+| Mahlberg, Michaela                | Corpus Stylistics and Dickens's Fiction                                                                            | 2013 |    0 | analyses         | cite:mahlberg_corpus_2013           | book         | checked out Borrow Direct |   178 |       178 |
+| Stewart, L. L.                    | Charles Brockden Brown: quantitative analysis and literary interpretation                                          | 2004 |    0 | analyses         | cite:stewart_charles_2003           | article      | PDF                       |     9 |         9 |
+| Alison, et al.                    | Style at the Scale of the Sentence                                                                                 | 2013 |    0 | analysis         | cite:allison_style_2013             | pamphlet     | PDF                       |    30 |        30 |
+| Algee-Hewitt, et al.              | On Paragraphs: Scale, Themes, and Narrative Form                                                                   | 2015 |    0 | analysis         | cite:algee-hewitt_paragraphs:_2015  | pamphlet     | PDF                       |    23 |        23 |
+| Hoover, David                     | Corpus Stylistics, Stylometry, and the Styles of Henry James                                                       | 2007 |    0 | analysis         | cite:hoover_corpus_2007-1           | article      | PDF                       |    29 |        29 |
+| Zyngier, et al.                   | Directions in Empirical Literary Studies                                                                           | 2008 |    0 | analysis         | cite:zyngier_directions_2008        | book         | PDF                       |   372 |       372 |
+|-----------------------------------+--------------------------------------------------------------------------------------------------------------------+------+------+------------------+-------------------------------------+--------------+---------------------------+-------+-----------|
+| 49                                |                                                                                                                    |      |    0 |                  |                                     |              | 45                        |  2922 |    2749.5 |
+#+TBLFM: @>$1='(length '(@I..@II))::@>$4='(length(org-lookup-all "Yes" '(@I..@II) nil));E::@>$8='(length(org-lookup-all "PDF" '(@I..@II) nil));E::@>$9=vsum(@I..@II)::$10=$9-($9*$4)::@>$10=vsum(@I..@II)
+
+** References
+<<bibliography link>>
