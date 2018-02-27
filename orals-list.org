@@ -32,13 +32,13 @@ of Style" deals with /Ulysses/.
 | List          | Total Works | Total Pages | Remaining Pages | % Complete |
 |---------------+-------------+-------------+-----------------+------------|
 | Modernist     |          58 |       15746 |          6100.5 |  38.308424 |
-| Victorian     |          29 |       11605 |          5356.3 |  43.068691 |
+| Victorian     |          29 |       11471 |          5222.3 |  43.068691 |
 | Style         |          49 |        2922 |          2387.5 |  4.9794661 |
 |---------------+-------------+-------------+-----------------+------------|
-| Total         |         136 |       30273 |         13844.3 |  54.268490 |
+| Total         |         136 |       30139 |         13710.3 |  54.509771 |
 |---------------+-------------+-------------+-----------------+------------|
-| Days to exam  |          51 |             |                 |            |
-| Pages per day |   271.45686 |             |                 |            |
+| Days to exam  |          43 |             |                 |            |
+| Pages per day |   318.84419 |             |                 |            |
 #+TBLFM: @2$2=remote(Modernist,@>$1)::@2$3=remote(Modernist,@>$8)::@2$4=remote(Modernist,@>$9)::@3$2=remote(Victorian,@>$1)::@3$3=remote(Victorian,@>$8)::@3$4=remote(Victorian,@>$9)::@4$2=remote(Style,@>$1)::@4$4=remote(Style,@>$10)::@5$2=vsum(@I..@II)::@5$3=vsum(@I..@II)::@5$4=vsum(@I..@II)::@5$5=100-($4/$3)*100::@6$2='(org-time-stamp-to-now "<2018-04-10 Fri>")::@7$2=@5$4/@6$2
 
 ** Major Field: British Modernism
@@ -91,7 +91,7 @@ movement, or the publishing environment in which they worked.
 | Forster, E.M.           | A Room with a View                               |      1908 |    0 | Novel         | cite:forster_room_2012        | EPUB on GPB                  |   176 |       176 |
 | Forster, E.M.           | A Passage to India                               |      1924 |    1 | Novel         | cite:forster_passage_1984     | Paper                        |   362 |         0 |
 | Frazer, James           | The Golden Bough                                 |      1890 |    1 | Nonfiction    | cite:frazer_golden_1996       | EPUB on GPB                  |   516 |      258. |
-| Freud, Sigmund          | The Interpretation of Dreams                     |      1900 |    1 | Nonfiction    | cite:freud_2010               | EPUB on GPB                  |   557 |     278.5 |
+| Freud, Sigmund          | The Interpretation of Dreams                     |      1900 |    1 | Nonfiction    | cite:freud1999interpretation  | EPUB on GPB                  |   557 |     278.5 |
 | Freud, Sigmund          | Civilization and its Discontents                 |      1930 |    1 | Nonfiction    | cite:freud_civilization_2015  | EPUB on GPB                  |   111 |         0 |
 | Hardy, Thomas           | Jude the Obscure                                 |      1896 |    1 | Novel         | cite:hardy_jude_2015          | Paper, Norton                |   451 |         0 |
 | Joyce, James            | A Portrait of the Artist as a Young Man          |      1914 |    1 | Novel         | cite:joyce_portrait_2007      | Paper, EPUB on GBP           |   490 |         0 |
@@ -158,39 +158,39 @@ Yellow Book/, and the more populist /The Graphic/, especially for their
 influence on literary modernism.
 
 #+NAME: Victorian
-| Author                       | Title                                       |    Year | Read | Genre         | Key                           | Availability          | Pages | Remaining |
-|------------------------------+---------------------------------------------+---------+------+---------------+-------------------------------+-----------------------+-------+-----------|
-| Arnold, Matthew              | Culture and Anarchy                         |    1867 |    0 | Non-fiction   | cite:arnold_culture_1869      | PDF                   |   344 |       344 |
-| Brontë, Charlotte            | Jane Eyre                                   |    1847 |    1 | Novel         | cite:bronte_jane_2016         | PDF and paper, Norton |   385 |         0 |
-| Brontë, Emily                | Wuthering Heights                           |    1845 |    0 | Novel         | cite:bronte_wuthering_2007    | EPUB - GPB            |   404 |       404 |
-| Carlyle, Thomas              | Sartor Resartus                             |    1836 |    0 | Novel         | cite:carlyle_sartor_1872      | PDF                   |   248 |       248 |
-| Collins, Wilkie              | Moonstone, The                              |    1868 |    1 | Novel         | cite:collins_moonstone_1999   | EPUB - GPB            |   637 |     318.5 |
-| Dickens, Charles             | Bleak House                                 |    1852 |    1 | Novel         | cite:dickens_bleak_1977       | Paper - Norton        |   760 |       760 |
-| Dickens, Charles             | David Copperfield                           |    1850 |    1 | Novel         | cite:dickens_david_1990       | Paper - Norton        |   854 |         0 |
-| Doyle, Arthur Conan          | The Adventures of Sherlock Holmes           |    1902 |    1 | Short stories | cite:doyle_new_2007           | EPUB - Amazon         |   300 |         0 |
-| Eliot, George                | Middlemarch                                 |    1871 |    1 | Novel         | cite:maertz_middlemarch_2004  | EPUB - GPB            |   750 |         0 |
-| Eliot, George                | Daniel Deronda                              |    1876 |  0.5 | Novel         | cite:eliot_daniel_2009        | EPUB - GPB            |   724 |       724 |
-| Gaskell, Elizabeth           | North and South                             |    1855 |    1 | Novel         | cite:gaskell_north_2005       | Paper - Norton        |   585 |         0 |
-| Hardy, Thomas                | Tess of the d'Ubervilles                    |    1891 |    0 | Novel         | cite:hardy_tess_2007          | Paper - Broadview     |   400 |       400 |
-| Hopkins, Gerard Manley       | Selected Poems                              | 1860-80 |  0.1 | Poetry        | cite:hopkins_selected_2013    | EPUB - GBP            |   124 |     111.6 |
-| James, Henry                 | Turn of the Screw, The                      |    1898 |    1 | Novella       | cite:james_turn_2010          | EPUB - GBP            |   304 |         0 |
-| Rosetti, Christina           | Goblin Market and Other Poems               |    1859 |  0.1 | Poetry        | cite:rossetti_goblin_1865     | PDF                   |   212 |     190.8 |
-| Ruskin, John                 | Selected Writings                           |   1860s |  0.7 | Non-fiction   | cite:ruskin_selected_2009     | Paper                 |   368 |     110.4 |
-| Shaw, George Bernard         | Mrs Warren's Profession                     |    1893 |    1 | Drama         | cite:shaw_george_2002         | Paper ordered         |   200 |         0 |
-| Stevenson, Robert Louis      | The Strange Case of Dr. Jekyll and Mr. Hyde |    1886 |    1 | Novel         | cite:stevenson_strange_2005   | EPUB - GBP            |   220 |         0 |
-| Stoker, Bram                 | Dracula                                     |    1897 |    1 | Novel         | cite:stoker_dracula_1997      | EPUB - GBP            |   493 |         0 |
-| Thackeray, William Makepeace | Vanity Fair                                 |    1847 |    0 | Novel         | cite:thackeray_vanity_1994    | Paper - Norton        |   689 |         0 |
-| Trollope, Anthony            | Barchester Towers                           |    1857 |    0 | Novel         | cite:trollope_barchester_1904 | PDF                   |   372 |       372 |
-| Tennyson, Lord Alfred        | Selected Poems                              | 1830-90 |    0 | Poetry        | cite:ricks_tennyson:_2014     | PDF                   |  1072 |      1072 |
-| Wilde, Oscar                 | Picture of Dorian Gray                      |    1890 |    0 | Novella       | cite:wilde_picture_2010       | EPUB - GBP            |   268 |         0 |
-| Wilde, Oscar                 | The Importance of Being Earnest             |    1895 |    1 | Drama         | cite:wilde_importance_2009    | Paper - Broadview     |   144 |         0 |
-| du Maurier, George           | Trilby                                      |    1894 |    1 | Novel         | cite:maurier_trilby_2003      | Paper - Broadview     |   447 |         0 |
-| Various                      | The Yellow Book (selected issues)           |   1890s |    0 | Journal       | cite:denisoff_yellow_2017     |                       |       |         0 |
-| Various                      | The Yellow Book 1                           |   1890s |    0 | Journal       | cite:beardsley_yellow_1894    | PDF                   |   301 |       301 |
-| Various                      | The Graphic (selected issues)               |   1890s |    0 | Journal       |                               |                       |       |         0 |
-| Wells, H.G.                  | The Time Machine                            |    1897 |    1 | Novella       | cite:wells_time_2001          | EPUB - Kindle         |       |         0 |
-|------------------------------+---------------------------------------------+---------+------+---------------+-------------------------------+-----------------------+-------+-----------|
-| 29                           |                                             |         | 15.4 |               |                               |                       | 11605 |    5356.3 |
+| Author                       | Title                                       |    Year | Read | Genre         | Key                          | Availability          | Pages | Remaining |
+|------------------------------+---------------------------------------------+---------+------+---------------+------------------------------+-----------------------+-------+-----------|
+| Arnold, Matthew              | Culture and Anarchy                         |    1867 |    0 | Non-fiction   | cite:arnold_culture_1869     | PDF                   |   344 |       344 |
+| Brontë, Charlotte            | Jane Eyre                                   |    1847 |    1 | Novel         | cite:bronte_jane_2016        | PDF and paper, Norton |   385 |         0 |
+| Brontë, Emily                | Wuthering Heights                           |    1845 |    0 | Novel         | cite:bronte_wuthering_2007   | EPUB - GPB            |   404 |       404 |
+| Carlyle, Thomas              | Sartor Resartus                             |    1836 |    0 | Novel         | cite:carlyle_sartor_1872     | PDF                   |   248 |       248 |
+| Collins, Wilkie              | Moonstone, The                              |    1868 |    1 | Novel         | cite:collins_moonstone_1999  | EPUB - GPB            |   637 |     318.5 |
+| Dickens, Charles             | Bleak House                                 |    1852 |    1 | Novel         | cite:dickens_bleak_1977      | Paper - Norton        |   760 |       760 |
+| Dickens, Charles             | David Copperfield                           |    1850 |    1 | Novel         | cite:dickens_david_1990      | Paper - Norton        |   854 |         0 |
+| Doyle, Arthur Conan          | The Adventures of Sherlock Holmes           |    1902 |    1 | Short stories | cite:doyle_new_2007          | EPUB - Amazon         |   300 |         0 |
+| Eliot, George                | Middlemarch                                 |    1871 |    1 | Novel         | cite:maertz_middlemarch_2004 | EPUB - GPB            |   750 |         0 |
+| Eliot, George                | Daniel Deronda                              |    1876 |  0.5 | Novel         | cite:eliot_daniel_2009       | EPUB - GPB            |   724 |       724 |
+| Gaskell, Elizabeth           | North and South                             |    1855 |    1 | Novel         | cite:gaskell_north_2005      | Paper - Norton        |   585 |         0 |
+| Hardy, Thomas                | Tess of the d'Ubervilles                    |    1891 |    0 | Novel         | cite:hardy_tess_2007         | Paper - Broadview     |   400 |       400 |
+| Hopkins, Gerard Manley       | Selected Poems                              | 1860-80 |  0.1 | Poetry        | cite:hopkins_selected_2013   | EPUB - GBP            |   124 |     111.6 |
+| James, Henry                 | Turn of the Screw, The                      |    1898 |    1 | Novella       | cite:james_turn_2010         | EPUB - GBP            |   304 |         0 |
+| Rosetti, Christina           | Goblin Market and Other Poems               |    1859 |  0.1 | Poetry        | cite:rossetti_goblin_1865    | PDF                   |   212 |     190.8 |
+| Ruskin, John                 | Selected Writings                           |   1860s |  0.5 | Non-fiction   | cite:ruskin_selected_2009    | Paper                 |   368 |     110.4 |
+| Shaw, George Bernard         | Mrs Warren's Profession                     |    1893 |    1 | Drama         | cite:shaw_george_2002        | Paper                 |   200 |         0 |
+| Stevenson, Robert Louis      | The Strange Case of Dr. Jekyll and Mr. Hyde |    1886 |    1 | Novel         | cite:stevenson_strange_2005  | EPUB - GBP            |   220 |         0 |
+| Stoker, Bram                 | Dracula                                     |    1897 |    1 | Novel         | cite:stoker_dracula_1997     | EPUB - GBP            |   493 |         0 |
+| Thackeray, William Makepeace | Vanity Fair                                 |    1847 |    0 | Novel         | cite:thackeray_vanity_1994   | Paper - Norton        |   689 |         0 |
+| Trollope, Anthony            | Warden, The                                 |    1857 |    0 | Novel         | cite:TrollopeWarden2000      | EPUB - GPB            |   238 |       238 |
+| Tennyson, Lord Alfred        | Selected Poems                              | 1830-90 |    0 | Poetry        | cite:ricks_tennyson:_2014    | PDF                   |  1072 |      1072 |
+| Wilde, Oscar                 | Picture of Dorian Gray                      |    1890 |    0 | Novella       | cite:wilde_picture_2010      | EPUB - GBP            |   268 |         0 |
+| Wilde, Oscar                 | The Importance of Being Earnest             |    1895 |    1 | Drama         | cite:wilde_importance_2009   | Paper - Broadview     |   144 |         0 |
+| du Maurier, George           | Trilby                                      |    1894 |    1 | Novel         | cite:maurier_trilby_2003     | Paper - Broadview     |   447 |         0 |
+| Various                      | The Yellow Book (selected issues)           |   1890s |    0 | Journal       | cite:denisoff_yellow_2017    |                       |       |         0 |
+| Various                      | The Yellow Book 1                           |   1890s |    0 | Journal       | cite:beardsley_yellow_1894   | PDF                   |   301 |       301 |
+| Various                      | The Graphic (selected issues)               |   1890s |    0 | Journal       |                              |                       |       |         0 |
+| Wells, H.G.                  | The Time Machine                            |    1897 |    1 | Novella       | cite:wells_time_2001         | EPUB - Kindle         |       |         0 |
+|------------------------------+---------------------------------------------+---------+------+---------------+------------------------------+-----------------------+-------+-----------|
+| 29                           |                                             |         | 15.2 |               |                              |                       | 11471 |    5222.3 |
 #+TBLFM: @>$1='(length '(@I..@II))::@>$4=vsum(@I..@II)::@>$8=vsum(@I..@II)::$9=$8-($8*$4)::@>$9=vsum(@I..@II)
 
 ** Minor Field: Computational Approaches to the Study of Literary Style
