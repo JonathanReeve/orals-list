@@ -31,15 +31,15 @@ of Style" deals with /Ulysses/.
 ** Progress
 | List          | Total Works | Total Pages | Remaining Pages | % Complete |
 |---------------+-------------+-------------+-----------------+------------|
-| Modernist     |          58 |       15746 |          6100.5 |  38.308424 |
-| Victorian     |          29 |       11471 |          5222.3 |  43.068691 |
+| Modernist     |          58 |       15746 |           6024. |  38.308424 |
+| Victorian     |          29 |       11471 |          5295.9 |  43.068691 |
 | Style         |          49 |        2922 |          2387.5 |  4.9794661 |
 |---------------+-------------+-------------+-----------------+------------|
-| Total         |         136 |       30139 |         13710.3 |  54.509771 |
+| Total         |         136 |       30139 |         13707.4 |  54.519393 |
 |---------------+-------------+-------------+-----------------+------------|
-| Days to exam  |          43 |             |                 |            |
-| Pages per day |   318.84419 |             |                 |            |
-#+TBLFM: @2$2=remote(Modernist,@>$1)::@2$3=remote(Modernist,@>$8)::@2$4=remote(Modernist,@>$9)::@3$2=remote(Victorian,@>$1)::@3$3=remote(Victorian,@>$8)::@3$4=remote(Victorian,@>$9)::@4$2=remote(Style,@>$1)::@4$4=remote(Style,@>$10)::@5$2=vsum(@I..@II)::@5$3=vsum(@I..@II)::@5$4=vsum(@I..@II)::@5$5=100-($4/$3)*100::@6$2='(org-time-stamp-to-now "<2018-04-10 Fri>")::@7$2=@5$4/@6$2
+| Days to exam  |          35 |             |                 |            |
+| Pages per day |      391.64 |             |                 |            |
+#+TBLFM: @2$2=remote(Modernist,@>$1)::@2$3=remote(Modernist,@>$8)::@2$4=remote(Modernist,@>$9)::@3$2=remote(Victorian,@>$1)::@3$3=remote(Victorian,@>$8)::@3$4=remote(Victorian,@>$9)::@4$2=remote(Style,@>$1)::@4$4=remote(Style,@>$10)::@5$2=vsum(@I..@II)::@5$3=vsum(@I..@II)::@5$4=vsum(@I..@II)::@5$5=100-($4/$3)*100::@6$2='(org-time-stamp-to-now "<2018-04-20 Fri>")::@7$2=@5$4/@6$2
 
 ** Major Field: British Modernism
 
@@ -83,7 +83,7 @@ movement, or the publishing environment in which they worked.
 | Conrad, Joseph          | The Secret Agent                                 |      1907 |    1 | Novel         | cite:conrad_secret_2009       | EPUB on GPB                  |   255 |         0 |
 | Eliot, T.S.             | The Love Song of J. Alfred Prufrock              |      1917 |    1 | Poetry        | cite:eliot_collected_1963     | PDF                          |     5 |         0 |
 | Eliot, T.S.             | The Waste Land                                   |      1922 |    1 | Poetry        | cite:eliot_waste_2001         | Paper, Norton                |    50 |         0 |
-| Eliot, T.S.             | Four Quartets                                    |      1944 |    0 | Poetry        | cite:eliot_collected_1963     | PDF                          |    20 |         0 |
+| Eliot, T.S.             | Four Quartets                                    |      1944 |    1 | Poetry        | cite:eliot_collected_1963     | PDF                          |    20 |         0 |
 | Ford, Ford Madox, ed.   | The English Review (selected issues)             |   1908-12 |    0 | Journal       | see issues                    |                              |       |         0 |
 | Ford, Ford Madox, Ed.   | The English Review 1-1                           |      1907 |    0 | Journal       | cite:hueffer_english_1908     | PDF                          |   212 |       212 |
 | Ford, Ford Madox, Ed.   | The English Review 3-12                          |      1908 |    0 | Journal       | cite:hueffer_english_1909     | PDF                          |   208 |       208 |
@@ -98,14 +98,14 @@ movement, or the publishing environment in which they worked.
 | Joyce, James            | Dubliners                                        |      1914 |    1 | Novel         | cite:joyce_dubliners:_2006    | EPUB on GBP                  |   369 |         0 |
 | Joyce, James            | Ulysses                                          |      1922 |    1 | Novel         | cite:joyce_ulysses_1986       | PDF                          |   668 |         0 |
 | Kipling, Rudyard        | Kim                                              |      1901 |    1 | Novel         | cite:kipling_kim:_2002        | Paper - Norton               |   480 |         0 |
-| Lawrence, D.H.          | Sons and Lovers                                  |      1913 |  0.5 | Novel         | cite:lawrence_sons_1913       | PDF                          |   537 |     268.5 |
+| Lawrence, D.H.          | Sons and Lovers                                  |      1913 |    1 | Novel         | cite:lawrence_sons_1913       | PDF                          |   537 |         0 |
 | Lawrence, D.H.          | Lady Chatterley's Lover                          |      1928 |    1 | Novel         | cite:lawrence_lady_2006       | Paper - Penguin Deluxe       |   400 |       400 |
 | Lewis, Wyndham          | Tarr                                             |      1918 |    0 | Novel         | cite:lewis_tarr_1918          | PDF                          |   393 |       393 |
 | Lewis, Wyndham, ed.     | Blast (selected issues)                          |      1914 |    0 | Journal       | see issues                    |                              |       |         0 |
 | Lewis, Wyndham, Ed.     | The Blast 1                                      |      1914 |    0 | Journal       | cite:lewis_blast_1914         | PDF                          |   212 |       212 |
 | Lewis, Wyndham, Ed.     | The Blast 2                                      |      1915 |    0 | Journal       | cite:lewis_blast_1915         | PDF                          |   112 |       112 |
-| Loy, Mina               | The Lost Lunar Baedeker                          |      1923 |  0.5 | Poetry        | cite:loy_lost_2015            | EPUB on GPB                  |   256 |      128. |
-| Mansfield, Katherine    | The Garden Party and Other Stories               |      1922 |  0.5 | Short stories | cite:mansfield_katherine_2006 | Paper, Norton                |   430 |      215. |
+| Loy, Mina               | The Lost Lunar Baedeker                          |      1923 | 0.75 | Poetry        | cite:loy_lost_2015            | EPUB on GPB                  |   256 |      128. |
+| Mansfield, Katherine    | The Garden Party and Other Stories               |      1922 |  0.9 | Short stories | cite:mansfield_katherine_2006 | Paper, Norton                |   430 |      215. |
 | Orage, A. R.            | The New Age (selected issues)                    |     1920s |    0 | Journal       |                               |                              |       |         0 |
 | Orwell, Geroge          | Burmese Days                                     |      1934 |    1 | Novel         | cite:orwell_burmese_1986      | EPUB on GPB                  |   277 |         0 |
 | Pound, Ezra             | ABC of Reading                                   |      1934 |  0.5 | Nonfiction    | cite:pound_abc_1960           | PDF                          |   206 |      103. |
@@ -119,11 +119,11 @@ movement, or the publishing environment in which they worked.
 | Synge, J.M.             | Playboy of the Western World                     |      1907 |    1 | Play          | cite:synge_playboy_1911       | PDF                          |   124 |         0 |
 | Various                 | The Penguin Book of First World War Poetry       | 1910s-20s |    1 | Poetry        | cite:walter_poems_2006        | EPUB on GPB                  |   350 |         0 |
 | Wells, H.G.             | Anne Veronica                                    |      1909 |    1 | Novel         | cite:wells_ann_2015           | Epub - GPB                   |       |         0 |
-| Wells, H.G.             | Tono-Bungay                                      |      1909 |    1 | Novel         | cite:wells_tono-bungay_2011   | Epub - Kindle                |   384 |         0 |
+| Wells, H.G.             | Tono-Bungay                                      |      1909 |  0.5 | Novel         | cite:wells_tono-bungay_2011   | Epub - Kindle                |   384 |      192. |
 | Wells, H.G.             | The Outline of History                           |      1919 |  0.5 | Nonfiction    | cite:wells_outline_1921       | PDF                          |  1197 |     598.5 |
 | Woolf, Virginia         | Mrs. Dalloway                                    |      1915 |    1 | Novel         | cite:woolf_mrs_2016           | Epub - GBP                   |   190 |         0 |
 | Woolf, Virginia         | To the Lighthouse                                |      1927 |    1 | Nonfiction    | cite:woolf_lighthouse_1993    | Epub - GPB                   |   267 |         0 |
-| Woolf, Virginia         | The Waves                                        |      1931 |  0.5 | Novel         | cite:woolf_waves_2014         | Epub - GPB                   |   300 |      150. |
+| Woolf, Virginia         | The Waves                                        |      1931 |    1 | Novel         | cite:WoolfWaves2014           | Epub - GPB                   |   300 |      150. |
 | Woolf, Virginia         | Between the Acts                                 |      1941 |    1 | Novel         | cite:woolf_between_2008       | Epub - Kindle                |   288 |         0 |
 | West, Rebecca           | Return of the Soldier                            |      1918 |    1 | Novel         | cite:west_return_2010         | Epub - GBP                   |   240 |         0 |
 | Yeats, W.B.             | Selected Poems                                   | 1910s-20s |    1 | Poetry        | cite:yeats_yeatss_2000        | Paper - Norton               |   518 |         0 |
@@ -139,7 +139,7 @@ movement, or the publishing environment in which they worked.
 | Morrison, Mark          | The Public Face of Modernism                     |      2001 |    0 | Criticism     | cite:morrisson_public_2001    |                              |       |         0 |
 | Scholes, Robert         | Modernism in the Magazines                       |      2010 |    0 | Criticism     | cite:scholes_modernism_2010   | Avail. through Borrow Direct |   340 |       340 |
 |-------------------------+--------------------------------------------------+-----------+------+---------------+-------------------------------+------------------------------+-------+-----------|
-| 58                      |                                                  |           |    0 |               |                               |                              | 15746 |    6100.5 |
+| 58                      |                                                  |           |    0 |               |                               |                              | 15746 |     6024. |
 #+TBLFM: @>$1='(length '(@I..@II))::@>$4='(length(org-lookup-all "Yes" '(@I..@II) nil));E::@>$8=vsum(@I..@II)::$9=$8-($8*$4)::@>$9=vsum(@I..@II)
 
 ** Minor Field: Victorian Literature
@@ -169,18 +169,18 @@ influence on literary modernism.
 | Dickens, Charles             | David Copperfield                           |    1850 |    1 | Novel         | cite:dickens_david_1990      | Paper - Norton        |   854 |         0 |
 | Doyle, Arthur Conan          | The Adventures of Sherlock Holmes           |    1902 |    1 | Short stories | cite:doyle_new_2007          | EPUB - Amazon         |   300 |         0 |
 | Eliot, George                | Middlemarch                                 |    1871 |    1 | Novel         | cite:maertz_middlemarch_2004 | EPUB - GPB            |   750 |         0 |
-| Eliot, George                | Daniel Deronda                              |    1876 |  0.5 | Novel         | cite:eliot_daniel_2009       | EPUB - GPB            |   724 |       724 |
+| Eliot, George                | Daniel Deronda                              |    1876 |    1 | Novel         | cite:eliot_daniel_2009       | EPUB - GPB            |   724 |       724 |
 | Gaskell, Elizabeth           | North and South                             |    1855 |    1 | Novel         | cite:gaskell_north_2005      | Paper - Norton        |   585 |         0 |
 | Hardy, Thomas                | Tess of the d'Ubervilles                    |    1891 |    0 | Novel         | cite:hardy_tess_2007         | Paper - Broadview     |   400 |       400 |
 | Hopkins, Gerard Manley       | Selected Poems                              | 1860-80 |  0.1 | Poetry        | cite:hopkins_selected_2013   | EPUB - GBP            |   124 |     111.6 |
 | James, Henry                 | Turn of the Screw, The                      |    1898 |    1 | Novella       | cite:james_turn_2010         | EPUB - GBP            |   304 |         0 |
 | Rosetti, Christina           | Goblin Market and Other Poems               |    1859 |  0.1 | Poetry        | cite:rossetti_goblin_1865    | PDF                   |   212 |     190.8 |
-| Ruskin, John                 | Selected Writings                           |   1860s |  0.5 | Non-fiction   | cite:ruskin_selected_2009    | Paper                 |   368 |     110.4 |
+| Ruskin, John                 | Selected Writings                           |   1860s |  0.5 | Non-fiction   | cite:ruskin_selected_2009    | Paper                 |   368 |      184. |
 | Shaw, George Bernard         | Mrs Warren's Profession                     |    1893 |    1 | Drama         | cite:shaw_george_2002        | Paper                 |   200 |         0 |
 | Stevenson, Robert Louis      | The Strange Case of Dr. Jekyll and Mr. Hyde |    1886 |    1 | Novel         | cite:stevenson_strange_2005  | EPUB - GBP            |   220 |         0 |
 | Stoker, Bram                 | Dracula                                     |    1897 |    1 | Novel         | cite:stoker_dracula_1997     | EPUB - GBP            |   493 |         0 |
 | Thackeray, William Makepeace | Vanity Fair                                 |    1847 |    0 | Novel         | cite:thackeray_vanity_1994   | Paper - Norton        |   689 |         0 |
-| Trollope, Anthony            | Warden, The                                 |    1857 |    0 | Novel         | cite:TrollopeWarden2000      | EPUB - GPB            |   238 |       238 |
+| Trollope, Anthony            | Warden, The                                 |    1857 |    1 | Novel         | cite:TrollopeWarden2000      | EPUB - GPB            |   238 |       238 |
 | Tennyson, Lord Alfred        | Selected Poems                              | 1830-90 |    0 | Poetry        | cite:ricks_tennyson:_2014    | PDF                   |  1072 |      1072 |
 | Wilde, Oscar                 | Picture of Dorian Gray                      |    1890 |    0 | Novella       | cite:wilde_picture_2010      | EPUB - GBP            |   268 |         0 |
 | Wilde, Oscar                 | The Importance of Being Earnest             |    1895 |    1 | Drama         | cite:wilde_importance_2009   | Paper - Broadview     |   144 |         0 |
@@ -190,7 +190,7 @@ influence on literary modernism.
 | Various                      | The Graphic (selected issues)               |   1890s |    0 | Journal       |                              |                       |       |         0 |
 | Wells, H.G.                  | The Time Machine                            |    1897 |    1 | Novella       | cite:wells_time_2001         | EPUB - Kindle         |       |         0 |
 |------------------------------+---------------------------------------------+---------+------+---------------+------------------------------+-----------------------+-------+-----------|
-| 29                           |                                             |         | 15.2 |               |                              |                       | 11471 |    5222.3 |
+| 29                           |                                             |         | 16.7 |               |                              |                       | 11471 |    5295.9 |
 #+TBLFM: @>$1='(length '(@I..@II))::@>$4=vsum(@I..@II)::@>$8=vsum(@I..@II)::$9=$8-($8*$4)::@>$9=vsum(@I..@II)
 
 ** Minor Field: Computational Approaches to the Study of Literary Style
@@ -212,7 +212,7 @@ are included, as they are frequently referenced in these studies.
 |-----------------------------------+--------------------------------------------------------------------------------------------------------------------+------+------+------------------+-------------------------------------+--------------+---------------------------+-------+-----------|
 | Mendenhall, T.C.                  | The Characteristic Curves of Composition                                                                           | 1887 |    1 | history          | cite:mendenhall_characteristic_1887 | article      | PDF                       |    12 |        12 |
 | Mendenhall, T.C.                  | A Mechanical Solution of a Literary Problem                                                                        | 1901 |    1 | history          | cite:mendenhall_mechanical_1901     | article      | PDF                       |     4 |         4 |
-| Zipf, G.K.                        | Selected Studies in the Principle of Relative Frequency in Language                                                | 1932 |    0 | history          | cite:zipf_selected_1932             | book         | PDF                       |       |         0 |
+| Zipf, G.K.                        | Selected Studies in the Principle of Relative Frequency in Language                                                | 1932 |    0 | history          | cite:zipf_selected_1932             | book         | PDF                       |       | 0         |
 | Yule, G. Udny                     | On Sentence-Length as a Statistical Characteristic of Style in Prose                                               | 1939 |    1 | history          | cite:yule_sentence-length_1939      | article      | PDF                       |    27 |         0 |
 | Yule, G. Udny                     | The Statistical Study of Literary Vocabulary                                                                       | 1944 |    0 | history          | cite:yule_statistical_1944          | book         | offsite - requested       |       |         0 |
 | Fucks, W.                         | On Mathematical Analysis of Style                                                                                  | 1952 |    1 | history          | cite:fucks_mathematical_1952        | article      | PDF                       |     7 |         7 |
@@ -260,5 +260,5 @@ are included, as they are frequently referenced in these studies.
 | Hoover, David                     | Corpus Stylistics, Stylometry, and the Styles of Henry James                                                       | 2007 |    0 | analysis         | cite:hoover_corpus_2007-1           | article      | PDF                       |    29 |        29 |
 | Zyngier, et al.                   | Directions in Empirical Literary Studies                                                                           | 2008 |    0 | analysis         | cite:zyngier_directions_2008        | book         | PDF                       |   372 |       372 |
 |-----------------------------------+--------------------------------------------------------------------------------------------------------------------+------+------+------------------+-------------------------------------+--------------+---------------------------+-------+-----------|
-| 49                                |                                                                                                                    |      |    0 |                  |                                     |              | 46                        |  2922 |    2387.5 |
+| 49                                |                                                                                                                    |      |    0 |                  |                                     |              |                        46 |  2922 | 2387.5    |
 #+TBLFM: @>$1='(length '(@I..@II))::@>$4='(length(org-lookup-all "Yes" '(@I..@II) nil));E::@>$8='(length(org-lookup-all "PDF" '(@I..@II) nil));E::@>$9=vsum(@I..@II)::$10=$9-($9*$4)::@>$10=vsum(@I..@II)
