@@ -23,7 +23,7 @@ ways, as well, such as through complementary pairs: Charlotte Brontë's /Jane
 Eyre/ with Jean Rhys's reworking /The Wide Sargasso Sea/, for example. The
 subjects of quantitative analyses are similarly paired: Mahlberg's /Corpus
 Stylistics and Dickens's Fiction/ deals primarily with /David Copperfield/;
-Ramsay's /Reading Machines and Balossi's "A Corpus Linguistic Approach to
+Ramsay's /Reading Machines/ and Balossi's "A Corpus Linguistic Approach to
 Literary Language and Characterization" analyze Woolf's /The Waves/; Zhao's "Art
 of Balance" discusses /To the Lighthouse/, and McKenna's "Statistical Analysis
 of Style" deals with /Ulysses/.
